@@ -2,7 +2,7 @@
 <h4>날짜: 2020.05.18 | 작성자: 김주연 | Version: 1.0 </h4>
 <hr>
 <h3> 1. 요구사항 분석 </h3>
-- 데이터 입력, 정렬 후 출력
+- 데이터 입력, 정렬 후 출력, 파일 출력
 <br>
 <hr>
 <h3> 2. 구조 설계 </h3>
@@ -17,6 +17,7 @@
 - sortingSelect: 정렬 선택 <br>
 - printingList: 데이터 출력 <br>
 - bubbleSorting: 데이터 정렬 -> 버블 알고리즘 <br>
+- fileWriting: 파일 출력 <br>
 
 <h4> 4) main.c : 위의 함수의 전체 흐름 정리 </h4>
 <hr>
