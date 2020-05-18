@@ -107,5 +107,7 @@ ii. 내림차순으로 정렬하고자 할때<br>
   <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/06.PNG" width="100%" height="100%">
  <li><h4>팀 이름을 기준으로 오름차순 선택</h4></li>
   <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/07.PNG" width="100%" height="100%">
+  <li><h4>팀 이름을 기준으로 내림차순 선택</h4></li>
+  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/08.PNG" width="100%" height="100%">
  </li>
 </ul>
