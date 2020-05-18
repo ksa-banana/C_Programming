@@ -96,5 +96,6 @@ ii. 내림차순으로 정렬하고자 할때<br>
  <li><h4>출력화면</h4></li>
   <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/01.PNG" width="90%" height="90%">
   <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/02.PNG" width="90%" height="90%">
+  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/03.PNG" width="90%" height="90%">
  </li>
 </ul>
