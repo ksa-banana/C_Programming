@@ -75,7 +75,7 @@
 
 <h4> 출력 함수 알고리즘</h4>
 
-  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/13.png" width="60%" height="40%">
+  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/13.png" width="80%" height="60%">
 <br>
 input : list, 정렬 순서, 리스트 사이즈<br>
 output : 프린트문<br><br>
