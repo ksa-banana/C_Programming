@@ -79,4 +79,7 @@
  <li>
 <h4><a href="https://github.com/ksa-banana/C_Language/tree/master/TeamProject_20200518/version_01">프로젝트</a></h4>
  </li>
+ <li>
+  <image ="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/01.PNG"/>
+ </li>
 </ul>
