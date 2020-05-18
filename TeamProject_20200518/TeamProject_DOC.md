@@ -72,6 +72,10 @@
 <hr>
 <h3> 4. 알고리즘 설계 및 구현 </h3>
 <ul>
+  <li>
+<h4>데이터 입력 함수 알고리즘</h4>
+ </li>
+ <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/15.png" width="80%" height="60%">
  <li>
 <h4>정렬 함수 알고리즘: 버블정렬</h4>
  </li>
