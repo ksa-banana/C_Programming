@@ -69,6 +69,10 @@ int main(void) {
 		case 3:
 			fileWriting(list, list_size);
 			break;
+			
+		case 4:
+			fileReading();
+			break;
 
 		default:
 			printf("1 또는 2를 입력해주세요.\n");

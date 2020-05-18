@@ -11,6 +11,7 @@ int menu(void)
 	printf("1. 입력\n");
 	printf("2. 정렬\n");
 	printf("3. 파일 출력\n");
+	printf("4. 파일 입력\n");
 	scanf("%d", &num);
 	printf("\n");
 
@@ -158,6 +159,33 @@ void fileWriting(struct teamList* list, int count) {
 	for (int i = 0; i < count; i++) {
 
 		fprintf(fp, "%d %80s %80s\n", list[i].id, list[i].team, list[i].company);
+	}
+
+	fclose(fp);
+}
+
+void fileReading() {
+
+	FILE* fp = NULL;
+
+	fopen_s(&fp, "C:\\Users\\USER\\Desktop\\test.txt", "r");
+
+	if (fp != NULL) {
+
+		int id = 0;
+		char team[80];
+		char company[80];
+
+		while (!feof(fp)) {
+
+			fscanf(fp, "%d %s %s", &id, team, company);
+
+			if (feof(fp)) {
+				break;
+			}
+
+			printf("%d %s %s\n", id, team, company);
+		}
 	}
 
 	fclose(fp);

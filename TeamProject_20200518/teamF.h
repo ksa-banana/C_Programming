@@ -13,4 +13,4 @@ void sortingSelect(struct teamList[], int, int);
 void printingList(struct teamList*, int, int);
 void bubbleSorting(struct teamList[], int, int, int);
 void fileWriting(struct teamList* list, int count);
-//void fileReading();
+void fileReading();
