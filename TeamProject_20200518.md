@@ -70,8 +70,12 @@
    </table>
 <br>
 <h3> 4. 알고리즘 설계 및 구현 </h3><br>
-- 알고리즘: 버블정렬 사용
+<h4>- 알고리즘: 버블정렬 사용</h4>
 
 <br>
 <h3> 5. coding 및 테스트 </h3>
+<ul>
+ <li>
 <h4><a href="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518.c">프로젝트</a></h4>
+ </li>
+</ul>
