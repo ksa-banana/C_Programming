@@ -8,12 +8,12 @@
 <table>
  <tr>
   <th>번호</th>
-  <td>
-   1
- </td>
   <th>팀 이름</th> 
   <th>회사</th>
   </tr>
+ <tr>
+  <td>1</td>
+ </tr>
    </table>
 
 2. 구조 설계
