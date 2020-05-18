@@ -77,10 +77,10 @@
 input : list, 정렬 순서, 리스트 사이즈<br>
 output : 프린트문<br><br>
 i. 오름차순으로 정렬하고자 할때<br>
- for문을 활용하여 0부터 마지막 리스트 인덱스까지 id, team, company를 차례로 출력한다. 
+- for문을 활용하여 0부터 마지막 리스트 인덱스까지 id, team, company를 차례로 출력한다. 
 <br>
 ii. 내림차순으로 정렬하고자 할때<br>
- for문을 활용하여 마지막 리스트 인덱스부터 0까지 역순으로 id, team, company를 차례로 출력한다. 
+- for문을 활용하여 마지막 리스트 인덱스부터 0까지 역순으로 id, team, company를 차례로 출력한다. 
 <br>
 
 <br>
