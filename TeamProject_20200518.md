@@ -16,10 +16,41 @@
   <th>팀 이름</th> 
   <th>회사</th>
   </tr>
+ 
  <tr>
   <td>1</td>
   <td>horangnavi(호랑나비)</td>
-  <td>navilab(나비랩)/td>
+  <td>navilab(나비랩)</td>
+ </tr>
+ 
+  <tr>
+  <td>2</td>
+  <td>machinegun(머신건)</td>
+  <td>5works</td>
+ </tr>
+ 
+  <tr>
+  <td>3</td>
+  <td>megaton(메가톤)</td>
+  <td>megazone(메가존)</td>
+ </tr>
+ 
+   <tr>
+  <td>4</td>
+  <td>dd</td>
+  <td>vitec(VITEC)</td>
+ </tr>
+ 
+    <tr>
+  <td>5</td>
+  <td>banana</td>
+  <td>monkeysoft(몽키소프트)</td>
+ </tr>
+ 
+     <tr>
+  <td>6</td>
+  <td>park123</td>
+  <td>nurdbana(너드바나)</td>
  </tr>
    </table>
 
