@@ -5,14 +5,11 @@
 - 데이터 입력, 정렬 후 출력
 - 데이터 종류: 번호(id), 팀 이름(team), 회사(company)
 
-[번호]   [팀 이름]      [회사]
- 1    | "horangnavi" | "navilab"
- 2    | "machinegun" | "5works"
- 3    | "megaton"    | "megazone"
- 4    | "dd"         | "vitec"
- 5    | "banana"     | "monkeysoft"
- 6    | "park123"    | "nurdbana" 
-
+<table>
+ <tr>
+  <th>번호</th>
+  </tr>
+   </table>
 
 2. 구조 설계
 
