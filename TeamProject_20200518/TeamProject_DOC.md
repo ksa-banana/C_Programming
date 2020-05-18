@@ -63,7 +63,7 @@
  
   <tr>
   <td>6</td>
-  <td>park123</td>
+  <td>park123(박123)</td>
   <td>nurdbana(너드바나)</td>
  </tr>
    </table>
