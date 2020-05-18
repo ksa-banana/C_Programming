@@ -13,3 +13,14 @@
  5    | "banana"     | "monkeysoft"
  6    | "park123"    | "nurdbana" 
 
+
+2. 구조 설계
+
+
+3. 입출력 데이터 정의 
+
+
+4. 알고리즘 설계 및 구현 
+
+
+5. coding 및 테스트
