@@ -71,10 +71,14 @@
 <br>
 <hr>
 <h3> 4. 알고리즘 설계 및 구현 </h3>
-<h4>- 정렬 함수 알고리즘: 버블정렬</h4>
-
-<h4>- 출력 함수 알고리즘</h4>
-
+<ul>
+ <li>
+<h4>정렬 함수 알고리즘: 버블정렬</h4>
+ </li>
+ <li>
+<h4>출력 함수 알고리즘</h4>
+ </li>
+ </ul>
   <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/13.png" width="80%" height="60%">
 <br>
 input : list, 정렬 순서, 리스트 사이즈<br>
