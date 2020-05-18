@@ -41,13 +41,13 @@
   <td>vitec(VITEC)</td>
  </tr>
  
-    <tr>
+  <tr>
   <td>5</td>
   <td>banana</td>
   <td>monkeysoft(몽키소프트)</td>
  </tr>
  
-     <tr>
+  <tr>
   <td>6</td>
   <td>park123</td>
   <td>nurdbana(너드바나)</td>
