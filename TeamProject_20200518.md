@@ -12,16 +12,16 @@
 - teamList: id(번호), team(팀 이름), company(회사)
 
 <h4> 3) 기능(함수) </h4>
-- menu: 메뉴 생성
-- input: 데이터 입력
-- sortingSelect: 정렬 선택
-- printingList: 데이터 출력
-- bubbleSorting: 데이터 정렬 -> 버블 알고리즘 
+- menu: 메뉴 생성 <br>
+- input: 데이터 입력 <br>
+- sortingSelect: 정렬 선택 <br>
+- printingList: 데이터 출력 <br>
+- bubbleSorting: 데이터 정렬 -> 버블 알고리즘 <br>
 
 <h4> 4) main.c : 위의 함수의 전체 흐름 정리 </h4>
 
 <h3> 3. 입출력 데이터 정의 </h3>
-- 데이터 종류: 번호(id), 팀 이름(team), 회사(company)
+- 데이터 종류: 번호(id), 팀 이름(team), 회사(company) <br>
 
 <table>
  <tr>
@@ -66,8 +66,8 @@
   <td>nurdbana(너드바나)</td>
  </tr>
    </table>
-
+<br>
 <h3> 4. 알고리즘 설계 및 구현 </h3>
 
-
+<br>
 <h3> 5. coding 및 테스트 </h3>
