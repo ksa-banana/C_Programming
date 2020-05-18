@@ -5,7 +5,19 @@
 - 데이터 입력, 정렬 후 출력
 
 2. 구조 설계
+1) 첫 번째 콘솔 입력창: 메뉴 생성 (①입력 ②정렬)
 
+2) 구조체 선언 및 생성
+- teamList: id(번호), team(팀 이름), company(회사)
+
+3) 기능(함수)
+- menu: 메뉴 생성
+- input: 데이터 입력
+- sortingSelect: 정렬 선택
+- printingList: 데이터 출력
+- bubbleSorting: 데이터 정렬 -> 버블 알고리즘 
+
+4) main.c : 위의 함수의 전체 흐름 정리
 
 3. 입출력 데이터 정의 
 - 데이터 종류: 번호(id), 팀 이름(team), 회사(company)
