@@ -9,6 +9,12 @@
       </li>
       <li>
         <h5>데이터 종류: 번호(id), 팀 이름(team), 회사(company)</h5>
+        <table>
+          <tr>
+            <td>
+            </td>
+          </tr>
+        </table>
       </li>
     </ul>
   </li>
