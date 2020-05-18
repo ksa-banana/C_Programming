@@ -16,7 +16,7 @@
 - input: 데이터 입력 <br>
 - sortingSelect: 정렬 선택 <br>
 - printingList: 데이터 출력 <br>
-- bubbleSorting: 데이터 정렬 -> 버블 알고리즘 <br>
+- bubbleSorting: 데이터 정렬 <br>
 - fileWriting: 파일 출력 <br>
 
 <h4> 4) main.c : 위의 함수의 전체 흐름 정리 </h4>
