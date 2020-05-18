@@ -18,6 +18,7 @@
 - printingList: 데이터 출력 <br>
 - bubbleSorting: 데이터 정렬 <br>
 - fileWriting: 파일 출력 <br>
+- fileReading: 파일 읽기 <br>
 
 <h4> 4) main.c : 위의 함수의 전체 흐름 정리 </h4>
 <hr>
