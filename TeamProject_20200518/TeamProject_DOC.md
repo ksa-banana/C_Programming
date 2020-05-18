@@ -79,15 +79,14 @@
 <h4>출력 함수 알고리즘</h4>
  </li>
 <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/13.png" width="80%" height="60%">
-<br>
- <ul>
+<ul>
  <li> input : list, 정렬 순서, 리스트 사이즈</li><br>
   <li><output : 프린트문<br><br></li>
-i. 오름차순으로 정렬하고자 할때<br>
-- for문을 활용하여 0부터 마지막 리스트 인덱스까지 id, team, company를 차례로 출력한다. 
+<li> 오름차순으로 정렬하고자 할때<br></li>
+<li>  for문을 활용하여 0부터 마지막 리스트 인덱스까지 id, team, company를 차례로 출력한다. </li>
 <br>
-ii. 내림차순으로 정렬하고자 할때<br>
-- for문을 활용하여 마지막 리스트 인덱스부터 0까지 역순으로 id, team, company를 차례로 출력한다. 
+<li>  내림차순으로 정렬하고자 할때<br></li>
+<li>  for문을 활용하여 마지막 리스트 인덱스부터 0까지 역순으로 id, team, company를 차례로 출력한다. </li>
  </ul>
  </ul>
 <br>
