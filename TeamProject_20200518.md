@@ -23,7 +23,7 @@
 <h3> 3. 입출력 데이터 정의 </h3>
 - 데이터 종류: 번호(id), 팀 이름(team), 회사(company) 
 <br>
-- 입력
+- 입력: 기본 입력은 아래 표와 같다.
 <br>
 <table>
  <tr>
@@ -70,6 +70,6 @@
    </table>
 <br>
 <h3> 4. 알고리즘 설계 및 구현 </h3>
-
+<a><h href="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518.c">프로젝트</h></a>
 <br>
 <h3> 5. coding 및 테스트 </h3>
