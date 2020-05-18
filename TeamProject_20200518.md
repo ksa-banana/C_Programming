@@ -8,6 +8,11 @@
 <table>
  <tr>
   <th>번호</th>
+  <td>
+   1
+ </td>
+  <th>팀 이름</th> 
+  <th>회사</th>
   </tr>
    </table>
 
