@@ -74,6 +74,9 @@
 <h4>- 알고리즘: 버블정렬 사용</h4>
 
 <h4> 출력 함수 알고리즘</h4>
+
+  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/13.PNG" width="90%" height="90%">
+<br>
 input : list, 정렬 순서, 리스트 사이즈<br>
 output : 프린트문<br><br>
 i. 오름차순으로 정렬하고자 할때<br>
