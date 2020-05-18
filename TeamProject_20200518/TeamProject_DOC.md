@@ -77,6 +77,6 @@
 <h3> 5. coding 및 테스트 </h3>
 <ul>
  <li>
-<h4><a href="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518.c">프로젝트</a></h4>
+<h4><a href="https://github.com/ksa-banana/C_Language/tree/master/TeamProject_20200518/version_01">프로젝트</a></h4>
  </li>
 </ul>
