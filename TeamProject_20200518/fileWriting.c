@@ -1,4 +1,4 @@
-/*#include <stdio.h>
+#include <stdio.h>
 #define _CRT_SECURE_NO_WARNINGS
 
 void fileWriting(struct teamList* list, int count);
@@ -52,4 +52,4 @@ void fileWriting(struct teamList* list, int count) {
 	}
 
 	fclose(fp);
-}*/
+}
