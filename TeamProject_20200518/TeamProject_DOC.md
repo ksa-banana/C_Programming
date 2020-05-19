@@ -81,11 +81,11 @@
  <li>
 <h4>정렬 함수 알고리즘: 버블정렬</h4>
  </li>
-
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/14.png" width="50%" height="50%">
  <li>
 <h4>출력 함수 알고리즘</h4>
  </li>
-
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/13.png" width="50%" height="50%">
 <ul>
  <li> input : list, 정렬 순서, 리스트 사이즈</li>
  <li>output : 프린트문</li>
