@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
+#include <time.h>
 
 struct studentList
 {
@@ -46,7 +47,7 @@ int main() {
 			break;
 
 		case 1:
-
+			time_t t = time(NULL);
 			searchingLeader(student_list, list_size);
 			break;
 
@@ -54,6 +55,7 @@ int main() {
 
 			printf("검색하고자 하는 회사명을 입력해주세요.\n");
 			scanf("%c", input);
+			time_t t = time(NULL);
 			searchingCompany(student_list, list_size, input);
 			break;
 
@@ -61,6 +63,7 @@ int main() {
 			
 			printf("검색하고자 하는 이름을 입력해주세요.\n");
 			scanf("%c", input);
+			time_t t = time(NULL);
 			searchingName(student_list, list_size, input);
 			break;
 
@@ -68,6 +71,7 @@ int main() {
 
 			printf("검색하고자 하는 E-mail을 입력해주세요.\n");
 			scanf("%c", input);
+			time_t t = time(NULL);
 			searchingEmail(student_list, list_size, input);
 			break;
 
@@ -75,6 +79,7 @@ int main() {
 
 			printf("검색하고자 하는 학교를 입력해주세요.\n");
 			scanf("%c", input);
+			time_t t = time(NULL);
 			searchingSchool(student_list, list_size, input);
 			break;
 		
@@ -82,6 +87,7 @@ int main() {
 
 			printf("검색하고자 하는 전공을 입력해주세요.\n");
 			scanf("%c", input);
+			time_t t = time(NULL);
 			searchingMajor(student_list, list_size, input);
 			break;
 
@@ -145,7 +151,7 @@ void searchingCompany(struct studentList *student_list, int list_size, char inpu
 
 	for (int i = 0; i < list_size; i++) {
 
-		if (strcmp(student_list[i].leader, "1") == 0) {
+		if (strcmp(student_list[i].company, input) == 0) {
 			count++;
 		}
 	}
@@ -154,7 +160,7 @@ void searchingCompany(struct studentList *student_list, int list_size, char inpu
 
 	for (int i = 0; i < list_size; i++) {
 
-		if (student_list[i].company == input) {
+		if (strcmp(student_list[i].company, input) == 0) {
 
 			strcpy(result_list[i].leader, student_list[i].leader);
 			strcpy(result_list[i].company, student_list[i].company);
@@ -174,7 +180,7 @@ void searchingName(struct studentList *student_list, int list_size, char input) 
 
 	for (int i = 0; i < list_size; i++) {
 
-		if (strcmp(student_list[i].leader, "1") == 0) {
+		if (strcmp(student_list[i].name, input) == 0) {
 			count++;
 		}
 	}
@@ -183,7 +189,7 @@ void searchingName(struct studentList *student_list, int list_size, char input) 
 
 	for (int i = 0; i < list_size; i++) {
 
-		if (student_list[i].name == input) {
+		if (strcmp(student_list[i].name, input) == 0) {
 
 			strcpy(result_list[i].leader, student_list[i].leader);
 			strcpy(result_list[i].company, student_list[i].company);
@@ -203,7 +209,7 @@ void searchingEmail(struct studentList *student_list, int list_size, char input)
 
 	for (int i = 0; i < list_size; i++) {
 
-		if (strcmp(student_list[i].leader, "1") == 0) {
+		if (strcmp(student_list[i].email, input) == 0) {
 			count++;
 		}
 	}
@@ -212,7 +218,7 @@ void searchingEmail(struct studentList *student_list, int list_size, char input)
 
 	for (int i = 0; i < list_size; i++) {
 
-		if (student_list[i].email == input) {
+		if (strcmp(student_list[i].email, input) == 0) {
 
 			strcpy(result_list[i].leader, student_list[i].leader);
 			strcpy(result_list[i].company, student_list[i].company);
@@ -232,7 +238,7 @@ void searchingSchool(struct studentList *student_list, int list_size, char input
 
 	for (int i = 0; i < list_size; i++) {
 
-		if (strcmp(student_list[i].leader, "1") == 0) {
+		if (strcmp(student_list[i].school, input) == 0) {
 			count++;
 		}
 	}
@@ -241,7 +247,7 @@ void searchingSchool(struct studentList *student_list, int list_size, char input
 
 	for (int i = 0; i < list_size; i++) {
 
-		if (student_list[i].school == input) {
+		if (strcmp(student_list[i].school, input) == 0) {
 
 			strcpy(result_list[i].leader, student_list[i].leader);
 			strcpy(result_list[i].company, student_list[i].company);
@@ -261,7 +267,7 @@ void searchingMajor(struct studentList *student_list, int list_size, char input)
 
 	for (int i = 0; i < list_size; i++) {
 
-		if (strcmp(student_list[i].leader, "1") == 0) {
+		if (strcmp(student_list[i].major, input) == 0) {
 			count++;
 		}
 	}
@@ -270,7 +276,7 @@ void searchingMajor(struct studentList *student_list, int list_size, char input)
 
 	for (int i = 0; i < list_size; i++) {
 
-		if (student_list[i].major == input) {
+		if (strcmp(student_list[i].major, input) == 0) {
 
 			strcpy(result_list[i].leader, student_list[i].leader);
 			strcpy(result_list[i].company, student_list[i].company);
