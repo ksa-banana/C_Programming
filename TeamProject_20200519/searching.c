@@ -14,12 +14,12 @@ struct studentList
 
 };
 
-void searchingLeader(struct studentList *student_list, int list_size);
-void searchingCompany(struct studentList *student_list, int list_size, char input);
-void searchingName(struct studentList *student_list, int list_size, char input);
-void searchingEmail(struct studentList *student_list, int list_size, char input);
-void searchingSchool(struct studentList *student_list, int list_size, char input);
-void searchingMajor(struct studentList *student_list, int list_size, char input);
+void searchingLeader(struct studentList *student_list, int list_size, time_t t);
+void searchingCompany(struct studentList *student_list, int list_size, char input, time_t t);
+void searchingName(struct studentList *student_list, int list_size, char input, time_t t);
+void searchingEmail(struct studentList *student_list, int list_size, char input, time_t t);
+void searchingSchool(struct studentList *student_list, int list_size, char input, time_t t);
+void searchingMajor(struct studentList *student_list, int list_size, char input, time_t t);
 int menu();
 
 
@@ -34,6 +34,7 @@ int main() {
 	int select_num = 0;
 	char input[60];
 	int list_size = 2;
+	time_t t;
 
 	while (1) {
 
@@ -47,48 +48,48 @@ int main() {
 			break;
 
 		case 1:
-			time_t t = time(NULL);
-			searchingLeader(student_list, list_size);
+			t = time(NULL);
+			searchingLeader(student_list, list_size, t);
 			break;
 
 		case 2:
 
 			printf("검색하고자 하는 회사명을 입력해주세요.\n");
 			scanf("%c", input);
-			time_t t = time(NULL);
-			searchingCompany(student_list, list_size, input);
+			t = time(NULL);
+			searchingCompany(student_list, list_size, input, t);
 			break;
 
 		case 3:
 			
 			printf("검색하고자 하는 이름을 입력해주세요.\n");
 			scanf("%c", input);
-			time_t t = time(NULL);
-			searchingName(student_list, list_size, input);
+			t = time(NULL);
+			searchingName(student_list, list_size, input, t);
 			break;
 
 		case 4:
 
 			printf("검색하고자 하는 E-mail을 입력해주세요.\n");
 			scanf("%c", input);
-			time_t t = time(NULL);
-			searchingEmail(student_list, list_size, input);
+			t = time(NULL);
+			searchingEmail(student_list, list_size, input, t);
 			break;
 
 		case 5:
 
 			printf("검색하고자 하는 학교를 입력해주세요.\n");
 			scanf("%c", input);
-			time_t t = time(NULL);
-			searchingSchool(student_list, list_size, input);
+			t = time(NULL);
+			searchingSchool(student_list, list_size, input, t);
 			break;
 		
 		case 6:
 
 			printf("검색하고자 하는 전공을 입력해주세요.\n");
 			scanf("%c", input);
-			time_t t = time(NULL);
-			searchingMajor(student_list, list_size, input);
+			t = time(NULL);
+			searchingMajor(student_list, list_size, input, t);
 			break;
 
 
@@ -116,7 +117,7 @@ int menu()
 	return num;
 }
 
-void searchingLeader(struct studentList *student_list, int list_size) {
+void searchingLeader(struct studentList *student_list, int list_size, time_t t) {
 
 	int count = 0;
 
@@ -145,7 +146,7 @@ void searchingLeader(struct studentList *student_list, int list_size) {
 	free(result_list);
 }
 
-void searchingCompany(struct studentList *student_list, int list_size, char input) {
+void searchingCompany(struct studentList *student_list, int list_size, char input, time_t t) {
 
 	int count = 0;
 
@@ -174,7 +175,7 @@ void searchingCompany(struct studentList *student_list, int list_size, char inpu
 	free(result_list);
 }
 
-void searchingName(struct studentList *student_list, int list_size, char input) {
+void searchingName(struct studentList *student_list, int list_size, char input, time_t t) {
 
 	int count = 0;
 
@@ -203,7 +204,7 @@ void searchingName(struct studentList *student_list, int list_size, char input) 
 	free(result_list);
 }
 
-void searchingEmail(struct studentList *student_list, int list_size, char input) {
+void searchingEmail(struct studentList *student_list, int list_size, char input, time_t t) {
 
 	int count = 0;
 
@@ -232,7 +233,7 @@ void searchingEmail(struct studentList *student_list, int list_size, char input)
 	free(result_list);
 }
 
-void searchingSchool(struct studentList *student_list, int list_size, char input) {
+void searchingSchool(struct studentList *student_list, int list_size, char input, time_t t) {
 
 	int count = 0;
 
@@ -261,7 +262,7 @@ void searchingSchool(struct studentList *student_list, int list_size, char input
 	free(result_list);
 }
 
-void searchingMajor(struct studentList *student_list, int list_size, char input) {
+void searchingMajor(struct studentList *student_list, int list_size, char input, time_t t) {
 
 	int count = 0;
 
