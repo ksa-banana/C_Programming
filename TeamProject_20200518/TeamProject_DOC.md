@@ -127,6 +127,6 @@
     <li><h4>파일 출력 결과</h4></li>
   <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/12.PNG" width="100%" height="100%">
  <li><h4>파일 입력 선택, 결과</h4></li>
- <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/11.PNG" width="100%" height="100%">
+ <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/11.PNG" width="50%" height="50%">
  </li>
 </ul>
