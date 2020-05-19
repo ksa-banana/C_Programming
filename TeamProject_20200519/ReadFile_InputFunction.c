@@ -20,7 +20,7 @@ struct studentList
 // 함수 선언
 // 파일 읽기
 // 반환형: int
-struct studentList* fileReading(void);
+struct studentList *fileReading(void);
 
 // 데이터 토큰 구별 후 저장  
 // arry[]: 자른 데이터 저장 배열
@@ -35,19 +35,36 @@ struct studentList inputData(char arry[]);
 
 // 전체 리스트 개수 반환
 
+
 int main(void) {
 
-    int list_Num = 0;
-    list_Num = malloc(MAX * MAX);
+    int k = 0;
+    int list_size = 0;
     // 구조체 리스트 선언 -> 동적 할당을 어떻게 해야 할지? 
-    struct studentList fileList[100];
+    struct studentList fileList[100] = {NULL};
 
     // 파일 읽기와 구조체에 저장
-    fileReading();
+    for (k = 0; k < 100; k++) {
+        fileList[k] = fileReading()[k];
+    }
 
     //fileList->leader = inputData()
+    for (k = 0; k < 25; k++) {
+        printf("%s\n", fileList[k].leader);
+        printf("%s\n", fileList[k].company);
+        printf("%s\n", fileList[k].name);
+        printf("%s\n", fileList[k].email);
+        printf("%s\n", fileList[k].school);
+        printf("%s\n", fileList[k].major);
+    }
 
+    while (strcmp(fileList[k].leader, NULL) != 0) {
+        k++;
+        list_size++;
+    }
 
+    printf("%d\n",sizeof(fileList)/ sizeof(fileList)[0]);
+    printf("%d\n", list_size);
 }
 
 
@@ -79,8 +96,8 @@ struct studentList  *fileReading(void) {
     int i = 0;
 
     // 파일 열기
-    //fp = fopen("C:\\result\\list2.csv", "r");
-    fp = fopen("C:\\result\\서울반 교육생 명단_한국표준협회.csv", "r");
+    fp = fopen("C:\\result\\studentListData.csv", "r");
+    //fp = fopen("C:\\result\\서울반 교육생 명단_한국표준협회.csv", "r");
 
     // 크기 동적 할당
     inp = malloc(buf_size);
@@ -101,7 +118,7 @@ struct studentList  *fileReading(void) {
     //    printf("%s \n", arry[data]);
 
     //}
-
+   
     fclose(fp);
 
     return stack_list;
@@ -117,18 +134,44 @@ struct studentList retToken(char* arry[], char* inp) {
     // char* ptr = strtok(inp, ";");
     char* ptr = strtok(inp, "??,\n");
 
-    char *line[MAX];
+    char* line[MAX];
+    line[0] = NULL;
 
     while (ptr != NULL) {
 
         arry[i] = ptr;
-        line[i] = ptr;
+        if (i==0&&(strcmp(ptr, "조장") != 0) && strcmp(ptr, "조장 여부") != 0) {
+            line[0] = "조원";
+            line[i + 1] = ptr;
+        }
+        else if(i == 0 && strcmp(ptr, "조장") == 0 || strcmp(ptr, "조장 여부") == 0){
+            line[i] = ptr;
+        }
+        else if (strcmp(line[0], "조원") == 0) {
+            line[i+1] = ptr;
+        }
+        else {
+            line[i] = ptr;
+        }
+
+        //line[i] = ptr;
         //ptr = strtok(NULL, ";");
         ptr = strtok(NULL, "??,\n");
 
         i++;
 
     }
+
+    
+    //if ((strcmp(line[0], "조장") != 0) && strcmp(line[0], "조장 여부") != 0) {
+    //    for (int j = 0; j < 4; j++) {
+    //        strcpy(line[5 - j], line[4 - j]);
+
+    //    }
+    //    strcpy(line[0], "조원");
+    //}
+
+
     //inputData(line);
     //return i;
     return inputData(line);
@@ -172,3 +215,4 @@ struct studentList inputData(char *line[]) {
     */
     return new_list;
 }
+
