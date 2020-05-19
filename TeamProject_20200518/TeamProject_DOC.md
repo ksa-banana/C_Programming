@@ -109,7 +109,7 @@
   <li><h4>정렬 선택, 정렬 기준 </h4></li>
   <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/03.PNG" width="50%" height="50%">
   <li><h4>오름차순 또는 내림차순 선택 </h4></li>
-  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/04.PNG" width="50%" height="50%">
+  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/04.PNG" width="100%" height="100%">
   <li><h4>id를 기준으로 오름차순 선택</h4></li>
   <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/05.PNG" width="100%" height="100%">
    <li><h4>id를 기준으로 내림차순 선택</h4></li>
