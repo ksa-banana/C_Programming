@@ -16,5 +16,5 @@ struct studentList
 
 int main() {
 	time_t t = time(NULL);
-	printf("현재시간 :%s\n", ctime(&t));
+	printf("Time :%s\n", ctime(&t));
 }
