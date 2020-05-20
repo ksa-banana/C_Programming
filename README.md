@@ -15,6 +15,10 @@
     <h4><a href="https://github.com/JoobeeJung">정주비</a></h4>
   </li>
   </ul>
+  <br>
+  
+<h4>[소프트웨어 개발 과정]</h4>
+<br>
 
 <h4>[팀 프로젝트]</h4>
 <ul>
