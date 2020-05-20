@@ -1,10 +1,10 @@
 ## [팀 프로젝트]
 <h4>날짜: 2020.05.18 | 작성자: 김주연 | Version: 1.0 </h4>
 <hr>
-<h3> 1. 요구사항 분석 </h3>
+<h3> 1. 요구사항 분석 (Requirement Analysis) </h3>
 <h4>- 데이터 입력, 정렬 후 출력, 파일 출력</h4>
 <br>
-<h3> 2. 구조 설계 </h3>
+<h3> 2. 구조 설계 (Structure Design) </h3>
 <h4> 1) 첫 번째 콘솔 입력창: 메뉴 생성 (입력/출력/파일출력/파일입력)</h4>
 
 <h4> 2) 구조체 선언 및 생성 </h4>
@@ -25,7 +25,7 @@
 <br>
 <hr>
 <br>
-<h3> 3. 입출력 데이터 정의 </h3>
+<h3> 3. 입력/출력 데이터 정의 (Data Structure Design) </h3>
 <h4> - 데이터 종류: 번호(id), 팀 이름(team), 회사(company) </h4>
 <h4> - 입력: 기본 입력은 아래 표와 같다. </h4>
 <br>
@@ -75,7 +75,7 @@
 
 <br>
 <hr>
-<h3> 4. 알고리즘 설계 및 구현 </h3>
+<h3> 4. 알고리즘 설계 및 구현 (Algorithm Design and Implementation) </h3>
 <ul>
   <li>
 <h4>데이터 입력 함수 알고리즘</h4>
@@ -102,7 +102,7 @@
 
 <br>
 <hr>
-<h3> 5. coding 및 테스트 </h3>
+<h3> 5. 코딩 및 테스트 (Coding and Test) </h3>
 <ul>
  <li>
 <h4><a href="https://github.com/ksa-banana/C_Language/tree/master/TeamProject_20200518/version_01">프로젝트</a></h4>
