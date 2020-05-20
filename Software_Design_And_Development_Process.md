@@ -1,4 +1,4 @@
-## 소프트웨어 설계 과정 (Software Designe Process)
+## 소프트웨어 설계 및 개발 과정 (Software Designe & Development Process)
 
 <h4>1. 요구사항 분석 (Requirement Analysis) </h4>
 <br>
