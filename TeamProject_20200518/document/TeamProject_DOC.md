@@ -80,23 +80,23 @@
   <li>
 <h4>데이터 입력 함수 알고리즘</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/15.png" width="40%" height="40%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/input_Function.png" width="40%" height="40%">
  <li>
 <h4>정렬 함수 알고리즘: 버블정렬</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/14.png" width="100%" height="70%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/bubbleSorting_Function.png" width="100%" height="70%">
  <li>
 <h4>출력 함수 알고리즘</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/13.png" width="100%" height="70%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/printingList_Function.png" width="100%" height="70%">
  <li>
  <h4>파일 쓰기 및 저장 함수 알고리즘</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/FC_fileWriting.png" width="100%" height="70%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/fileWriting_Function.png" width="100%" height="70%">
  <li>
 <h4>파일 읽기 함수 알고리즘</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/FC_fileReading.png" width="100%" height="70%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/fileReading_Function.png" width="100%" height="70%">
  </ul>
 <br>
 
