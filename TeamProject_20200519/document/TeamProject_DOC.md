@@ -48,7 +48,7 @@
   <td>나비랩</td>
   <td>김**</td>
   <td>aaa@email.com</td>
-  <td>가나다학교</td>
+  <td>**대학교</td>
   <td>컴퓨터공학</td> 
  </tr>
   <tr>
@@ -56,7 +56,7 @@
   <td>나비랩</td>
   <td>최**</td>
   <td>bbb@email.com</td>
-  <td>ABC학교</td>
+  <td>**대학교</td>
   <td>화학공학</td> 
  </tr>
  
@@ -65,7 +65,7 @@
   <td>5works</td>
   <td>이**</td>
   <td>ccc@email.com</td>
-  <td>라마바학교</td>
+  <td>**대학교</td>
   <td>소프트웨어공학</td> 
  </tr>
  
@@ -74,7 +74,7 @@
   <td>5works</td>
   <td>임**</td>
   <td>ddd@email.com</td>
-  <td>DEF학교</td>
+  <td>**대학교</td>
   <td>전자공학</td> 
  </tr>
  
@@ -83,13 +83,37 @@
   <td>메가존클라우드</td>
   <td>이**</td>
   <td>eee@email.com</td>
-  <td>사아자대학교</td>
+  <td>**대학교</td>
+  <td>기계공학</td> 
+ </tr>
+  <tr>
+  <td></td>
+  <td>메가존클라우드</td>
+  <td>박**</td>
+  <td>***@email.com</td>
+  <td>**대학교</td>
+  <td>기계공학</td> 
+ </tr>
+  <tr>
+  <td></td>
+  <td>메가존클라우드</td>
+  <td>이**</td>
+  <td>***@email.com</td>
+  <td>**대학교</td>
+  <td>기계공학</td> 
+ </tr>
+  <tr>
+  <td></td>
+  <td>메가존클라우드</td>
+  <td>고**</td>
+  <td>***@email.com</td>
+  <td>**대학교</td>
   <td>기계공학</td> 
  </tr>
  
  <tr>
-  <td>4</td>
-  <td>dd</td>
+  <td>조장</td>
+  <td>VITEC</td>
   <td>vitec(VITEC)</td>
   <td></td>
   <td></td>
