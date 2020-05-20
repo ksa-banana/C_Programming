@@ -88,7 +88,7 @@
  <li>
 <h4>출력 함수 알고리즘</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/printingList_Function_Korean.png" width="100%" height="70%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/printingList_Function.png" width="100%" height="70%">
  <li>
  <h4>파일 쓰기 및 저장 함수 알고리즘</h4>
  </li>
