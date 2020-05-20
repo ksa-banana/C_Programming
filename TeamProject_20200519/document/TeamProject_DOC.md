@@ -8,7 +8,7 @@
 <h4> 1) 첫 번째 콘솔 입력창: 메뉴 생성 (조장 검색/기업 검색/이름 검색/이메일 검색/학교 검색/전공 검색)</h4>
 
 <h4> 2) 구조체 선언 및 생성 </h4>
-<h5>- studentList: leader(조장 여부), company(회사), name(이름), email(이메일), school(학교), major(전공)</h5>
+<h5>- studentList: leader(조장 여부), company(회사), name(이름), email(이메일), school(학교), major(전공)</h5><br>
 
 <h4> 3) 기능(함수) </h4>
 <h5>- menu: 메뉴 생성 </h5>
@@ -21,7 +21,7 @@
 <h5>- searchingEmail: 이메일 컬럼 검색 </h5>
 <h5>- searchingSchool: 학교 컬럼 검색 </h5>
 <h5>- serachingMajor: 전공 컬럼 검색 </h5>
-<h5>- logFileWrithing: 파일 출력 </h5>
+<h5>- logFileWrithing: 파일 출력 </h5><br>
 
 <h4> 4) studnetP.h : 구조체 선언, 함수 선언  </h4>
 <h4> 5) studentP.c : 함수 정의, include studnetP.h </h4>
