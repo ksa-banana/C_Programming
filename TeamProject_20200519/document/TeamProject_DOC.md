@@ -6,12 +6,13 @@
 <br>
 <hr>
 <h3> 2. 구조 설계 </h3>
-<h4> 1) 첫 번째 콘솔 입력창: 메뉴 생성 (입력/출력/파일출력/파일입력)</h4>
+<h4> 1) 첫 번째 콘솔 입력창: 메뉴 생성 (조장 검색/기업 검색/이름 검색/이메일 검색/학교 검색/전공 검색)</h4>
 
 <h4> 2) 구조체 선언 및 생성 </h4>
-- studentList: leader(조장 여부), company(회사), name(이름), email(이메일), school(학교), majoi(전공)
+- studentList: leader(조장 여부), company(회사), name(이름), email(이메일), school(학교), major(전공)
 
 <h4> 3) 기능(함수) </h4>
+- menu: 메뉴 생성 <br>
 - fileReading: 파일 읽기 <br>
 - retToken: 토큰으로 데이터 자르기 <br>
 - inputData: 데이터 record 출력 <br>
@@ -21,7 +22,6 @@
 - searchingEmail: 이메일 컬럼 검색 <br>
 - searchingSchool: 학교 컬럼 검색 <br>
 - serachingMajor: 전공 컬럼 검색 <br>
-- menu: 메뉴 생성 <br>
 - logFileWrithing: 파일 출력 <br>
 
 <h4> 4) main.c : 위의 함수의 전체 흐름 정리 </h4>
@@ -72,6 +72,9 @@
   <td>4</td>
   <td>dd</td>
   <td>vitec(VITEC)</td>
+  <td></td>
+  <td></td>
+  <td></td>
  </tr>
  
  <tr>
