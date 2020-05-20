@@ -126,7 +126,7 @@
   <td>박**</td>
   <td>***@email.com</td>
   <td>**대학교</td>
-  <td></td> 
+  <td>항공우주</td> 
  </tr>
    </table>
 
