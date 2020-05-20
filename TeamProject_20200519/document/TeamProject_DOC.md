@@ -117,24 +117,15 @@
   <td>강**</td>
   <td>***@email.com</td>
   <td>**대학교</td>
-  <td>산업템공학</td> 
+  <td>산업공학</td> 
  </tr>
  
- <tr>
-  <td>5</td>
-  <td>banana</td>
-  <td>monkeysoft(몽키소프트)</td>
+  <tr>
   <td></td>
-  <td></td>
-  <td></td> 
- </tr>
- 
- <tr>
-  <td>6</td>
-  <td>park123(박123)</td>
-  <td>nurdbana(너드바나)</td>
-  <td></td>
-  <td></td>
+  <td>D기업</td>
+  <td>박**</td>
+  <td>***@email.com</td>
+  <td>**대학교</td>
   <td></td> 
  </tr>
    </table>
