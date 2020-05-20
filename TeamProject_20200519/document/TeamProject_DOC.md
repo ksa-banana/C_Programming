@@ -47,17 +47,34 @@
   <td>조장</td>
   <td>navilab(나비랩)</td>
   <td>김**</td>
-  <td>email@email.com</td>
+  <td>aaa@email.com</td>
   <td>가나다학교</td>
   <td>컴퓨터공학</td> 
  </tr>
+  <tr>
+  <td></td>
+  <td>navilab(나비랩)</td>
+  <td>최**</td>
+  <td>bbb@email.com</td>
+  <td>ABC학교</td>
+  <td>화학공학</td> 
+ </tr>
  
  <tr>
-  <td>2</td>
-  <td>machinegun(머신건)</td>
+  <td>조장</td>
   <td>5works</td>
+  <td>이**</td>
+  <td>ccc@email.com</td>
+  <td>라마바학교</td>
+  <td>소프트웨어공학</td> 
+ </tr>
+ 
+  <tr>
   <td></td>
-  <td></td>
+  <td>5works</td>
+  <td>임**</td>
+  <td>ddd@email.com</td>
+  <td>DEF학교</td>
   <td></td> 
  </tr>
  
@@ -100,7 +117,7 @@
 
 <br>
 <hr>
-<h3> 4. 알고리즘 설계 및 구현 </h3>
+<h3> 4. 알고리즘 설계 및 구현 (Algorithm Design and Implementation) </h3>
 <ul>
   <li>
 <h4>데이터 파일 입력 함수 알고리즘</h4>
