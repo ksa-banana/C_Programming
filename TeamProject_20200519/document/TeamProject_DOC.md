@@ -28,6 +28,7 @@
 <h4> 6) main.c : studentP.c 함수 호출, 전체 흐름 알고리즘 </h4>
 <br>
 <hr>
+<br>
 <h3> 3. 입력/출력 데이터 정의 (Data Structure Design) </h3>
 <h4> - 데이터 종류: leader(조장 여부), company(회사), name(이름), email(이메일), school(학교), major(전공), time(시간) </h4> 
 <h4> - 입력: 주어진 엑셀 파일 데이터는 아래 표와 같다.(dummy data) </h4> 
