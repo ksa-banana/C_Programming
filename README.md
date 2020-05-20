@@ -13,3 +13,10 @@
     <h4><a href="https://github.com/JoobeeJung">정주비</a></h4>
   </li>
   </ul>
+
+<h4>[팀 프로젝트]</h4>
+<ul>
+  <li>
+    <h4><a href ="https://github.com/ksa-banana/C_Language/tree/master/TeamProject_20200515">최대, 최소, 평균, 표준편차 함수 구현</a></h4>
+  </li>
+  </ul>
