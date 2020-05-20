@@ -45,11 +45,11 @@
  
  <tr>
   <td>조장</td>
-  <td>horangnavi(호랑나비)</td>
   <td>navilab(나비랩)</td>
-  <td></td>
-  <td></td>
-  <td></td> 
+  <td>김**</td>
+  <td>email@email.com</td>
+  <td>가나다학교</td>
+  <td>컴퓨터공학</td> 
  </tr>
  
  <tr>
