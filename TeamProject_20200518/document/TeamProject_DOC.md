@@ -11,7 +11,7 @@
 <h4> 2) 구조체 선언 및 생성 </h4>
 - teamList: id(번호), team(팀 이름), company(회사)
 
-<h4> 3) 기능(함수) </h4>
+<h4> 3) 기능(함수) 선언 및 정의 </h4>
 - menu: 메뉴 생성 <br>
 - input: 데이터 입력 <br>
 - sortingSelect: 정렬 선택 <br>
@@ -20,7 +20,10 @@
 - fileWriting: 파일 출력 <br>
 - fileReading: 파일 읽기 <br>
 
-<h4> 4) main.c : 위의 함수의 전체 흐름 정리 </h4>
+<h4> 4) teamF.h : 구조체 선언, 함수 선언 </h4>
+<h4> 5) teamF.c : 함수 정의, include teamF.h </h4>
+<h4> 6) main.c : teamF.c 함수 호출, 전체 흐름 알고리즘 </h4>
+
 <hr>
 <h3> 3. 입출력 데이터 정의 </h3>
  - 데이터 종류: 번호(id), 팀 이름(team), 회사(company) <br>
