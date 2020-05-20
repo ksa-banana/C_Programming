@@ -51,7 +51,7 @@ struct studentList* fileReading(void) {
 	int i = 0;
 
 	// 파일 열기
-	//fp = fopen("C:\\result\\list2.csv", "r");
+	//fp = fopen("C:\\result\\studentListData.csv", "r");
 	fp = fopen("C:\\result\\서울반 교육생 명단_한국표준협회.csv", "r");
 
 	// 크기 동적 할당
@@ -61,19 +61,13 @@ struct studentList* fileReading(void) {
 	// fgets: 문자열 입력
 	while (fgets(inp, buf_size, fp)) {
 
-		// 함수로 arry 배열의 주소와 입력받은 스트링을 전달. 
-		//index = retToken(arry, inp);
+		// 함수로 arry 배열의 주소와 입력받은 스트링을 전달.
 		new_list = retToken(arry, inp);
 		stack_list[i] = new_list;
 		i++;
 	}
 
-	//for (data = 0; data < index; data++) {
-
-	//    printf("%s \n", arry[data]);
-
-	//}
-
+	
 	fclose(fp);
 
 	return stack_list;
@@ -90,23 +84,31 @@ struct studentList retToken(char* arry[], char* inp) {
 	char* ptr = strtok(inp, "??,\n");
 
 	char* line[MAX];
+	line[0] = NULL;
 
 	while (ptr != NULL) {
 
-		//arry[i] = ptr;
-		line[i] = ptr;
-		//ptr = strtok(NULL, ";");
+		arry[i] = ptr;
+		if (i == 0 && (strcmp(ptr, "조장") != 0) && strcmp(ptr, "조장 여부") != 0) {
+			line[0] = "조원";
+			line[i + 1] = ptr;
+		}
+		else if (i == 0 && strcmp(ptr, "조장") == 0 || strcmp(ptr, "조장 여부") == 0) {
+			line[i] = ptr;
+		}
+		else if (strcmp(line[0], "조원") == 0) {
+			line[i + 1] = ptr;
+		}
+		else {
+			line[i] = ptr;
+		}
+
 		ptr = strtok(NULL, "??,\n");
 
 		i++;
+
 	}
 
-
-	if (line[0] == "")
-		strcpy(*line[0], "조원");
-
-	//inputData(line);
-	//return i;
 	return inputData(line);
 }
 
@@ -115,7 +117,6 @@ struct studentList inputData(char* line[]) {
 
 	struct studentList new_list = { NULL };
 
-	//struct studentList stack_list[100] = {NULL};
 
 	int j = 0;
 	char* test[MAX];
@@ -208,6 +209,7 @@ void searchingCompany(struct studentList* student_list, int list_size, char *inp
 		printf("결과가 없습니다.\n");
 
 	struct studentList* result_list = (struct studentList*) malloc(sizeof(struct studentList) * count);
+
 
 	for (int i = 0; i < list_size; i++) {
 
@@ -395,7 +397,7 @@ void logFileWriting(struct studentList *list, time_t time, int count)
 	//파일에 list와 time 출력
 	for (i = 0; i < count; i++)
 	{
-		fprintf(ofp, "%s %s %s %s %s %s %d\n", list[i].leader, list[i].company, list[i].name, list[i].email, list[i].school, list[i].major, time);
+		fprintf(ofp, "%s %s %s %s %s %s %s\n", list[i].leader, list[i].company, list[i].name, list[i].email, list[i].school, list[i].major, ctime(&time));
 
 	};
 
