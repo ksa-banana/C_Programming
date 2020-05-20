@@ -17,7 +17,7 @@
   </ul>
   <br>
   
-<h4>[소프트웨어 개발 과정]</h4>
+<h4><a href="https://github.com/ksa-banana/C_Language/blob/master/Software_Design_And_Development_Process.md">[소프트웨어 설계&개발 과정]</a></h4>
 <br>
 
 <h4>[팀 프로젝트]</h4>
