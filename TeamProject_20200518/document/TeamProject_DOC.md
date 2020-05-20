@@ -77,11 +77,11 @@
   <li>
 <h4>데이터 입력 함수 알고리즘</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/15.png" width="50%" height="50%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/15.png" width="40%" height="40%">
  <li>
 <h4>정렬 함수 알고리즘: 버블정렬</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/14.png" width="50%" height="50%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/14.png" width="70%" height="70%">
  <li>
 <h4>출력 함수 알고리즘</h4>
  </li>
