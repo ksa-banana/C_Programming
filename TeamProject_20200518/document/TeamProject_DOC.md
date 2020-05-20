@@ -9,7 +9,7 @@
 <h4> 1) 첫 번째 콘솔 입력창: 메뉴 생성 (입력/출력/파일출력/파일입력)</h4>
 
 <h4> 2) 구조체 선언 및 생성 </h4>
-<h5>- teamList: id(번호), team(팀 이름), company(회사)</h5>
+<h5>- teamList: id(번호), team(팀 이름), company(회사)</h5><br>
 
 <h4> 3) 기능(함수) 선언 및 정의 </h4>
 <h5>- menu: 메뉴 생성</h5> 
@@ -18,7 +18,7 @@
 <h5>- printingList: 데이터 출력</h5>
 <h5>- bubbleSorting: 데이터 정렬</h5> 
 <h5>- fileWriting: 파일 출력</h5> 
-<h5>- fileReading: 파일 읽기</h5> 
+<h5>- fileReading: 파일 읽기</h5><br>
 
 <h4> 4) teamF.h : 구조체 선언, 함수 선언 </h4>
 <h4> 5) teamF.c : 함수 정의, include teamF.h </h4>
