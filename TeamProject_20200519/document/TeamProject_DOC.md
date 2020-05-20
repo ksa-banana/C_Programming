@@ -45,7 +45,7 @@
  
  <tr>
   <td>조장</td>
-  <td>navilab(나비랩)</td>
+  <td>나비랩</td>
   <td>김**</td>
   <td>aaa@email.com</td>
   <td>가나다학교</td>
@@ -53,7 +53,7 @@
  </tr>
   <tr>
   <td></td>
-  <td>navilab(나비랩)</td>
+  <td>나비랩</td>
   <td>최**</td>
   <td>bbb@email.com</td>
   <td>ABC학교</td>
@@ -75,16 +75,16 @@
   <td>임**</td>
   <td>ddd@email.com</td>
   <td>DEF학교</td>
-  <td></td> 
+  <td>전자공학</td> 
  </tr>
  
  <tr>
-  <td>3</td>
-  <td>megaton(메가톤)</td>
-  <td>megazone(메가존)</td>
-  <td></td>
-  <td></td>
-  <td></td> 
+  <td>조장</td>
+  <td>메가존클라우드</td>
+  <td>이**</td>
+  <td>eee@email.com</td>
+  <td>사아자대학교</td>
+  <td>기계공학</td> 
  </tr>
  
  <tr>
