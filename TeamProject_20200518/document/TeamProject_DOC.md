@@ -1,30 +1,33 @@
 ## [팀 프로젝트]
 <h4>날짜: 2020.05.18 | 작성자: 김주연 | Version: 1.0 </h4>
 <hr>
-<h3> 1. 요구사항 분석 </h3>
-- 데이터 입력, 정렬 후 출력, 파일 출력
+<h3> 1. 요구사항 분석 (Requirement Analysis) </h3>
+<h4>- 데이터 입력, 정렬 후 출력, 파일 출력</h4>
 <br>
-<hr>
-<h3> 2. 구조 설계 </h3>
+<h3> 2. 구조 설계 (Structure Design) </h3>
 <h4> 1) 첫 번째 콘솔 입력창: 메뉴 생성 (입력/출력/파일출력/파일입력)</h4>
 
 <h4> 2) 구조체 선언 및 생성 </h4>
-- teamList: id(번호), team(팀 이름), company(회사)
+<h5>- teamList: id(번호), team(팀 이름), company(회사)</h5><br>
 
-<h4> 3) 기능(함수) </h4>
-- menu: 메뉴 생성 <br>
-- input: 데이터 입력 <br>
-- sortingSelect: 정렬 선택 <br>
-- printingList: 데이터 출력 <br>
-- bubbleSorting: 데이터 정렬 <br>
-- fileWriting: 파일 출력 <br>
-- fileReading: 파일 읽기 <br>
+<h4> 3) 기능(함수) 선언 및 정의 </h4>
+<h5>- menu: 메뉴 → 사용자의 선택 </h5> 
+<h5>- input: 데이터 입력</h5> 
+<h5>- sortingSelect: 정렬 선택 → 사용자의 선택</h5> 
+<h5>- bubbleSorting: 데이터 정렬</h5> 
+<h5>- printingList: 데이터 출력</h5>
+<h5>- fileWriting: 파일 쓰기</h5> 
+<h5>- fileReading: 파일 읽기</h5><br>
 
-<h4> 4) main.c : 위의 함수의 전체 흐름 정리 </h4>
+<h4> 4) teamF.h : 구조체 선언, 함수 선언 </h4>
+<h4> 5) teamF.c : 함수 정의, include teamF.h </h4>
+<h4> 6) main.c : teamF.c 함수 호출, 전체 흐름 알고리즘 </h4>
+<br>
 <hr>
-<h3> 3. 입출력 데이터 정의 </h3>
- - 데이터 종류: 번호(id), 팀 이름(team), 회사(company) <br>
- - 입력: 기본 입력은 아래 표와 같다.
+<br>
+<h3> 3. 입력/출력 데이터 정의 (Data Structure Design) </h3>
+<h4> - 데이터 종류: 번호(id), 팀 이름(team), 회사(company) </h4>
+<h4> - 입력: 기본 입력은 아래 표와 같다. </h4>
 <br>
 <table>
  <tr>
@@ -72,40 +75,42 @@
 
 <br>
 <hr>
-<h3> 4. 알고리즘 설계 및 구현 </h3>
+<h3> 4. 알고리즘 설계 및 구현 (Algorithm Design and Implementation) </h3>
 <ul>
+   <li>
+<h4>메뉴 함수 알고리즘 (menu)</h4>
+ </li>
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/menu_Function.png" width="30%" height="20%">
   <li>
-<h4>데이터 입력 함수 알고리즘</h4>
+<h4>데이터 입력 함수 알고리즘 (input)</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/15.png" width="50%" height="50%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/input_Function.png" width="30%" height="20%">
+  <li>
+<h4>정렬 선택 함수 알고리즘 (sortingSelect)</h4>
+ </li>
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/sortingSelect_Function.png" width="20%" height="20%">
+<li>
+<h4>정렬 함수 알고리즘: 버블정렬 (bubbleSorting)</h4>
+ </li>
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/bubbleSorting_Function.png" width="100%" height="70%">
  <li>
-<h4>정렬 함수 알고리즘: 버블정렬</h4>
+<h4>출력 함수 알고리즘 (printingList)</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/14.png" width="50%" height="50%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/printingList_Function.png" width="100%" height="70%">
  <li>
-<h4>출력 함수 알고리즘</h4>
+ <h4>파일 쓰기 및 저장 함수 알고리즘 (fileWriting)</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/13.png" width="50%" height="50%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/fileWriting_Function.png" width="100%" height="70%">
  <li>
- <h4>파일 쓰기 및 저장 함수 알고리즘</h4>
+<h4>파일 읽기 함수 알고리즘 (fileReading)</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/FC_fileWriting.png" width="50%" height="50%">
- <li>
-<h4>파일 읽기 함수 알고리즘</h4>
- </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/FC_fileReading.png" width="50%" height="50%">
-<ul>
- <li> input : list, 정렬 순서, 리스트 사이즈</li>
- <li>output : 프린트문</li>
-<li>오름차순으로 정렬하고자 할때: for문을 활용하여 0부터 마지막 리스트 인덱스까지 id, team, company를 차례로 출력한다. </li>
-<li> 내림차순으로 정렬하고자 할때: for문을 활용하여 마지막 리스트 인덱스부터 0까지 역순으로 id, team, company를 차례로 출력한다. </li>
- </ul>
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/fileReading_Function.png" width="100%" height="70%">
  </ul>
 <br>
 
 <br>
 <hr>
-<h3> 5. coding 및 테스트 </h3>
+<h3> 5. 코딩 및 테스트 (Coding and Test) </h3>
 <ul>
  <li>
 <h4><a href="https://github.com/ksa-banana/C_Language/tree/master/TeamProject_20200518/version_01">프로젝트</a></h4>

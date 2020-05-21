@@ -1,4 +1,4 @@
-// ±¸Á¶Ã¼
+// êµ¬ì¡°ì²´ ì„ ì–¸
 struct teamList
 {
 	int id;
@@ -6,7 +6,7 @@ struct teamList
 	char company[80];
 };
 
-// ÇÔ¼ö ¼±¾ð
+// í•¨ìˆ˜ ì„ ì–¸
 int menu(void);
 struct teamList* input(int);
 void sortingSelect(struct teamList[], int, int);
