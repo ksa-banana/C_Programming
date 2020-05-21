@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdlib.h>  
 
-// ÀÛ¼ºÀÚ: Kim Joo Yeon
+// ì‘ì„±ì: Kim Joo Yeon
 
 struct studentList
 {
@@ -12,29 +12,29 @@ struct studentList
     char leader[20];
     char company[20];
     char name[20];
-    char email[20];
+    char email[50];
     char school[30];
     char major[60];
 
 };
 
-// ÇÔ¼ö ¼±¾ğ
-// ÆÄÀÏ ÀĞ±â
-// ¹İÈ¯Çü: int
+// í•¨ìˆ˜ ì„ ì–¸
+// íŒŒì¼ ì½ê¸°
+// ë°˜í™˜í˜•: int
 struct studentList* fileReading(void);
 
-// µ¥ÀÌÅÍ ÅäÅ« ±¸º° ÈÄ ÀúÀå  
-// arry[]: ÀÚ¸¥ µ¥ÀÌÅÍ ÀúÀå ¹è¿­
-// ptr: Æ÷ÀÎÅÍ
-// ¹İÈ¯Çü: int
+// ë°ì´í„° í† í° êµ¬ë³„ í›„ ì €ì¥  
+// arry[]: ìë¥¸ ë°ì´í„° ì €ì¥ ë°°ì—´
+// ptr: í¬ì¸í„°
+// ë°˜í™˜í˜•: int
 //int retToken(char* arry[], char* ptr);
 struct studentList retToken(char* arry[], char* ptr);
 
-// ±¸Á¶Ã¼¿¡ µ¥ÀÌÅÍ ÀúÀå
-// ¹İÈ¯Çü: studentListÀÇ Æ÷ÀÎÅÍ
+// êµ¬ì¡°ì²´ì— ë°ì´í„° ì €ì¥
+// ë°˜í™˜í˜•: studentListì˜ í¬ì¸í„°
 struct studentList inputData(char arry[]);
 
-// ÀüÃ¼ ¸®½ºÆ® °³¼ö ¹İÈ¯
+// ì „ì²´ ë¦¬ìŠ¤íŠ¸ ê°œìˆ˜ ë°˜í™˜
 
 
 int main(void) {
@@ -43,10 +43,10 @@ int main(void) {
     int h = 0;
     int list_length = 0;
 
-    // ±¸Á¶Ã¼ ¸®½ºÆ® ¼±¾ğ
+    // êµ¬ì¡°ì²´ ë¦¬ìŠ¤íŠ¸ ì„ ì–¸
     struct studentList fileList[100] = { NULL };
 
-    // ÆÄÀÏ ÀĞ±â¿Í ±¸Á¶Ã¼¿¡ ÀúÀå
+    // íŒŒì¼ ì½ê¸°ì™€ êµ¬ì¡°ì²´ì— ì €ì¥
     for (k = 0; k < 100; k++) {
         fileList[k] = fileReading()[k];
     }
@@ -61,7 +61,7 @@ int main(void) {
         printf("%s\n", fileList[k].major);
     }
 
-    // ±¸Á¶Ã¼ ¸®½ºÆ® °³¼ö ¼¼±â
+    // êµ¬ì¡°ì²´ ë¦¬ìŠ¤íŠ¸ ê°œìˆ˜ ì„¸ê¸°
     while (strcmp(fileList[h].leader, "") != 0) {
        h++;
        list_length++;
@@ -72,25 +72,25 @@ int main(void) {
 }
 
 
-// ÇÔ¼ö Á¤ÀÇ
-// fileReading ÇÔ¼ö: ÆÄÀÏÀ» ÀĞ´Â ÇÔ¼ö
+// í•¨ìˆ˜ ì •ì˜
+// fileReading í•¨ìˆ˜: íŒŒì¼ì„ ì½ëŠ” í•¨ìˆ˜
 struct studentList* fileReading(void) {
 
-    // ÆÄÀÏ Æ÷ÀÎÅÍ 
+    // íŒŒì¼ í¬ì¸í„° 
     FILE* fp;
 
     int index = 0, data = 0;
 
-    // ¿øº» µ¥ÀÌÅÍ Æ÷ÀÎÅÍ
+    // ì›ë³¸ ë°ì´í„° í¬ì¸í„°
     char* inp;
 
-    // ¹öÆÛ »çÀÌÁî
+    // ë²„í¼ ì‚¬ì´ì¦ˆ
     int buf_size = MAX * MAX;
 
-    // Æ÷ÀÎÅÍ
+    // í¬ì¸í„°
     char* ptr;
 
-    // ¹®ÀÚ¿­ÀÌ µé¾î°¥ ¹è¿­ Æ÷ÀÎÅÍ
+    // ë¬¸ìì—´ì´ ë“¤ì–´ê°ˆ ë°°ì—´ í¬ì¸í„°
     char* arry[MAX];
 
     struct studentList new_list = { NULL };
@@ -99,18 +99,18 @@ struct studentList* fileReading(void) {
 
     int i = 0;
 
-    // ÆÄÀÏ ¿­±â
+    // íŒŒì¼ ì—´ê¸°
     //fp = fopen("C:\\result\\studentListData.csv", "r");
-    fp = fopen("C:\\result\\¼­¿ï¹İ ±³À°»ı ¸í´Ü_ÇÑ±¹Ç¥ÁØÇùÈ¸.csv", "r");
+    fp = fopen("C:\\result\\ì„œìš¸ë°˜ êµìœ¡ìƒ ëª…ë‹¨_í•œêµ­í‘œì¤€í˜‘íšŒ.csv", "r");
 
-    // Å©±â µ¿Àû ÇÒ´ç
+    // í¬ê¸° ë™ì  í• ë‹¹
     inp = malloc(buf_size);
 
 
-    // fgets: ¹®ÀÚ¿­ ÀÔ·Â
+    // fgets: ë¬¸ìì—´ ì…ë ¥
     while (fgets(inp, buf_size, fp)) {
 
-        // ÇÔ¼ö·Î arry ¹è¿­ÀÇ ÁÖ¼Ò¿Í ÀÔ·Â¹ŞÀº ½ºÆ®¸µÀ» Àü´Ş. 
+        // í•¨ìˆ˜ë¡œ arry ë°°ì—´ì˜ ì£¼ì†Œì™€ ì…ë ¥ë°›ì€ ìŠ¤íŠ¸ë§ì„ ì „ë‹¬. 
         //index = retToken(arry, inp);
         new_list = retToken(arry, inp);
         stack_list[i] = new_list;
@@ -129,12 +129,12 @@ struct studentList* fileReading(void) {
 
 }
 
-// retToken ÇÔ¼ö: ÅäÅ«À» ±âÁØÀ¸·Î µ¥ÀÌÅÍ Àı´Ü
+// retToken í•¨ìˆ˜: í† í°ì„ ê¸°ì¤€ìœ¼ë¡œ ë°ì´í„° ì ˆë‹¨
 struct studentList retToken(char* arry[], char* inp) {
 
     int i = 0;
 
-    // strtok()À» ÀÌ¿ëÇÏ¿© ¹®ÀÚ¿­À» ';' ÅäÅ«À» ±âÁØÀ¸·Î ÀÚ¸§
+    // strtok()ì„ ì´ìš©í•˜ì—¬ ë¬¸ìì—´ì„ ';' í† í°ì„ ê¸°ì¤€ìœ¼ë¡œ ìë¦„
     // char* ptr = strtok(inp, ";");
     char* ptr = strtok(inp, "??,\n");
 
@@ -144,14 +144,14 @@ struct studentList retToken(char* arry[], char* inp) {
     while (ptr != NULL) {
 
         arry[i] = ptr;
-        if (i == 0 && (strcmp(ptr, "Á¶Àå") != 0) && strcmp(ptr, "Á¶Àå ¿©ºÎ") != 0) {
-            line[0] = "Á¶¿ø";
+        if (i == 0 && (strcmp(ptr, "ì¡°ì¥") != 0) && strcmp(ptr, "ì¡°ì¥ ì—¬ë¶€") != 0) {
+            line[0] = "ì¡°ì›";
             line[i + 1] = ptr;
         }
-        else if (i == 0 && strcmp(ptr, "Á¶Àå") == 0 || strcmp(ptr, "Á¶Àå ¿©ºÎ") == 0) {
+        else if (i == 0 && strcmp(ptr, "ì¡°ì¥") == 0 || strcmp(ptr, "ì¡°ì¥ ì—¬ë¶€") == 0) {
             line[i] = ptr;
         }
-        else if (strcmp(line[0], "Á¶¿ø") == 0) {
+        else if (strcmp(line[0], "ì¡°ì›") == 0) {
             line[i + 1] = ptr;
         }
         else {
@@ -166,7 +166,7 @@ struct studentList retToken(char* arry[], char* inp) {
     return inputData(line);
 }
 
-// inputData ÇÔ¼ö: ±¸Á¶Ã¼¿¡ µ¥ÀÌÅÍ ÀúÀå
+// inputData í•¨ìˆ˜: êµ¬ì¡°ì²´ì— ë°ì´í„° ì €ì¥
 struct studentList inputData(char* line[]) {
 
     struct studentList new_list = {NULL};
