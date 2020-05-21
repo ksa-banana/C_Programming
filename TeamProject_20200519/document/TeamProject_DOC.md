@@ -177,7 +177,7 @@
  <li>
 <h4>검색 기록 파일 쓰기 함수 알고리즘 (logFileWrithing)</h4>
  </li>
-<img src="" width="50%" height="50%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/01.png" width="30%" height="30%">
  </ul>
 <br>
 
