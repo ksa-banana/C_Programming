@@ -77,6 +77,10 @@
 <hr>
 <h3> 4. 알고리즘 설계 및 구현 (Algorithm Design and Implementation) </h3>
 <ul>
+   <li>
+<h4>메뉴 함수 알고리즘</h4>
+ </li>
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/menu_Function.png" width="40%" height="40%">
   <li>
 <h4>데이터 입력 함수 알고리즘</h4>
  </li>
