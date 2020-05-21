@@ -147,7 +147,7 @@
  </li>
 <img src="" width="50%" height="50%">
  <li>
-<h4>정제된 데이터 구조체 저장 함수 알고리즘 (inputData)</h4>
+<h4>데이터 저장 함수 알고리즘 (inputData)</h4>
  </li>
 <img src="" width="50%" height="50%">
   <li>
