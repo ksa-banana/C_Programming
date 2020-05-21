@@ -80,15 +80,15 @@
    <li>
 <h4>메뉴 함수 알고리즘 (menu)</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/menu_Function.png" width="20%" height="20%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/menu_Function.png" width="100%" height="20%">
   <li>
 <h4>데이터 입력 함수 알고리즘 (input)</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/input_Function.png" width="20%" height="20%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/input_Function.png" width="100%" height="20%">
   <li>
 <h4>정렬 선택 함수 알고리즘 (sortingSelect)</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/sortingSelect_Function.png" width="20%" height="20%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/sortingSelect_Function.png" width="100%" height="20%">
 <li>
 <h4>정렬 함수 알고리즘: 버블정렬(bubbleSorting)</h4>
  </li>
