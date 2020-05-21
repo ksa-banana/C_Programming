@@ -84,7 +84,7 @@
   <li>
 <h4>데이터 입력 함수 알고리즘</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/input_Function.png" width="40%" height="40%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/input_Function.png" width="20%" height="20%">
  <li>
 <h4>정렬 함수 알고리즘: 버블정렬</h4>
  </li>
