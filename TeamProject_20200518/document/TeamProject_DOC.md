@@ -13,7 +13,7 @@
 <h4> 3) 기능(함수) 선언 및 정의 </h4>
 <h5>- menu: 메뉴 → 사용자의 선택 </h5> 
 <h5>- input: 데이터 입력</h5> 
-<h5>- sortingSelect: 정렬 선택</h5> 
+<h5>- sortingSelect: 정렬 선택 → 사용자의 선택</h5> 
 <h5>- bubbleSorting: 데이터 정렬</h5> 
 <h5>- printingList: 데이터 출력</h5>
 <h5>- fileWriting: 파일 쓰기</h5> 
