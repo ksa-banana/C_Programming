@@ -145,7 +145,7 @@
  <li>
 <h4>토큰 함수 알고리즘 (retToken)</h4>
  </li>
-<img src="" width="50%" height="50%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/retToken_Function.png" width="20%" height="20%">
  <li>
 <h4>데이터 저장 함수 알고리즘 (inputData)</h4>
  </li>
