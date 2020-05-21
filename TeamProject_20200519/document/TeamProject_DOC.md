@@ -185,7 +185,18 @@
 <hr>
 <h3> 5. 코딩 및 테스트 (Coding and Test) </h3>
 <ul>
- <li>
-<h4><a href="https://github.com/ksa-banana/C_Language/tree/master/TeamProject_20200519/version_01">프로젝트</a></h4>
- </li>
+ <li><h4>메뉴 출력화면</h4></li>
+  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/menu_view.PNG" width="50%" height="50%">
+ <li><h4>조장 검색 출력화면</h4></li>
+  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingLeader_view.PNG" width="50%" height="50%">
+ <li><h4>회사 검색 출력화면</h4></li>
+  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingCompany_view.PNG" width="50%" height="50%">
+ <li><h4>이름 검색 출력화면</h4></li>
+  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingName_view.PNG" width="50%" height="50%">
+ <li><h4>Email 검색 출력화면</h4></li>
+  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingEmail_view.PNG" width="50%" height="50%">
+ <li><h4>학교 검색 출력화면</h4></li>
+  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingSchool_view.PNG" width="50%" height="50%">
+ <li><h4>전공 검색 출력화면</h4></li>
+  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingMajor_view.PNG" width="50%" height="50%">
  </ul>
