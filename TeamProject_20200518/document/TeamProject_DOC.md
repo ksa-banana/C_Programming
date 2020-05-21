@@ -11,7 +11,7 @@
 <h5>- teamList: id(번호), team(팀 이름), company(회사)</h5><br>
 
 <h4> 3) 기능(함수) 선언 및 정의 </h4>
-<h5>- menu: 메뉴 생성</h5> 
+<h5>- menu: 메뉴 → 사용자의 </h5> 
 <h5>- input: 데이터 입력</h5> 
 <h5>- sortingSelect: 정렬 선택</h5> 
 <h5>- printingList: 데이터 출력</h5>
