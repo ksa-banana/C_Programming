@@ -153,27 +153,27 @@
   <li>
 <h4>데이터 검색 함수 알고리즘: 조장 검색 (searchingLeader)</h4>
  </li>
-<img src="" width="50%" height="50%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingLeader_Function.png" width="30%" height="30%">
  <li>
 <h4>데이터 검색 함수 알고리즘: 기업 검색 (searchingCompany)</h4>
  </li>
-<img src="" width="50%" height="50%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingCompany_Function.png" width="30%" height="30%">
   <li>
 <h4>데이터 검색 함수 알고리즘: 이름 검색 (searchingName)</h4>
  </li>
-<img src="" width="50%" height="50%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingName_Function.png" width="30%" height="30%">
    <li>
 <h4>데이터 검색 함수 알고리즘: 이메일 검색 (searchingEmail)</h4>
  </li>
-<img src="" width="50%" height="50%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingEmail_Function.png" width="30%" height="30%">
     <li>
 <h4>데이터 검색 함수 알고리즘: 학교 검색 (searchingSchool)</h4>
  </li>
-<img src="" width="50%" height="50%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingSchool_Function.png" width="30%" height="30%">
   <li>
 <h4>데이터 검색 함수 알고리즘: 전공 검색 (serachingMajor)</h4>
  </li>
-<img src="" width="50%" height="50%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingMajor_Function.png" width="30%" height="30%">
  <li>
 <h4>검색 기록 파일 쓰기 함수 알고리즘 (logFileWrithing)</h4>
  </li>
