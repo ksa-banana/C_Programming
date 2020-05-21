@@ -11,11 +11,11 @@
 <h5>- studentList: leader(조장 여부), company(회사), name(이름), email(이메일), school(학교), major(전공)</h5><br>
 
 <h4> 3) 기능(함수) </h4>
-<h5>- menu: 메뉴 생성 </h5>
+<h5>- menu: 메뉴 → 사용자의 선택 </h5>
 <h5>- fileReading: 파일 읽기 </h5>
 <h5>- retToken: 토큰으로 데이터 자르기 </h5>
-<h5>- inputData: 데이터 record 출력 </h5>
-<h5>- searchingLeader: 조장컬럼 검색 </h5>
+<h5>- inputData: 정제된 데이터 구조체에 저장 </h5>
+<h5>- searchingLeader: 조장 컬럼 검색 </h5>
 <h5>- searchingCompany: 기업 컬럼 검색 </h5>
 <h5>- searchingName: 이름 컬럼 검색 </h5>
 <h5>- searchingEmail: 이메일 컬럼 검색 </h5>
@@ -134,24 +134,48 @@
 <hr>
 <h3> 4. 알고리즘 설계 및 구현 (Algorithm Design and Implementation) </h3>
 <ul>
+<li>
+<h4>메뉴 함수 알고리즘 (menu)</h4>
+ </li>
+<img src="" width="50%" height="50%">
   <li>
-<h4>데이터 파일 입력 함수 알고리즘</h4>
+<h4>엑셀 파일 읽기 함수 알고리즘 (fileReading)</h4>
  </li>
 <img src="" width="50%" height="50%">
  <li>
-<h4>토큰 함수 알고리즘</h4>
+<h4>토큰 함수 알고리즘 (retToken)</h4>
  </li>
 <img src="" width="50%" height="50%">
  <li>
-<h4>데이터 record 출력 함수 알고리즘</h4>
+<h4>정제된 데이터 구조체 저장 함수 알고리즘 (inputData)</h4>
+ </li>
+<img src="" width="50%" height="50%">
+  <li>
+<h4>데이터 검색 함수 알고리즘: 조장 검색 (searchingLeader)</h4>
  </li>
 <img src="" width="50%" height="50%">
  <li>
-<h4>데이터 검색 함수 알고리즘: 회사명 검색</h4>
+<h4>데이터 검색 함수 알고리즘: 기업 검색 (searchingCompany)</h4>
+ </li>
+<img src="" width="50%" height="50%">
+  <li>
+<h4>데이터 검색 함수 알고리즘: 이름 검색 (searchingName)</h4>
+ </li>
+<img src="" width="50%" height="50%">
+   <li>
+<h4>데이터 검색 함수 알고리즘: 이메일 검색 (searchingEmail)</h4>
+ </li>
+<img src="" width="50%" height="50%">
+    <li>
+<h4>데이터 검색 함수 알고리즘: 학교 검색 (searchingSchool)</h4>
+ </li>
+<img src="" width="50%" height="50%">
+  <li>
+<h4>데이터 검색 함수 알고리즘: 전공 검색 (serachingMajor)</h4>
  </li>
 <img src="" width="50%" height="50%">
  <li>
-<h4>데이터 파일 추력 함수 알고리즘</h4>
+<h4>검색 기록 파일 쓰기 함수 알고리즘 (logFileWrithing)</h4>
  </li>
 <img src="" width="50%" height="50%">
  </ul>
