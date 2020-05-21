@@ -88,7 +88,7 @@
   <li>
 <h4>정렬 선택 함수 알고리즘 (sortingSelect)</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/sortingSelect_Function.png" width="10%" height="10%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/sortingSelect_Function.png" width="20%" height="20%">
 <li>
 <h4>정렬 함수 알고리즘: 버블정렬(bubbleSorting)</h4>
  </li>
