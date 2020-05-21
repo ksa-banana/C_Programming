@@ -11,12 +11,12 @@
 <h5>- teamList: id(번호), team(팀 이름), company(회사)</h5><br>
 
 <h4> 3) 기능(함수) 선언 및 정의 </h4>
-<h5>- menu: 메뉴 → 사용자의 </h5> 
+<h5>- menu: 메뉴 → 사용자의 선택 </h5> 
 <h5>- input: 데이터 입력</h5> 
 <h5>- sortingSelect: 정렬 선택</h5> 
-<h5>- printingList: 데이터 출력</h5>
 <h5>- bubbleSorting: 데이터 정렬</h5> 
-<h5>- fileWriting: 파일 출력</h5> 
+<h5>- printingList: 데이터 출력</h5>
+<h5>- fileWriting: 파일 쓰기</h5> 
 <h5>- fileReading: 파일 읽기</h5><br>
 
 <h4> 4) teamF.h : 구조체 선언, 함수 선언 </h4>
@@ -78,27 +78,27 @@
 <h3> 4. 알고리즘 설계 및 구현 (Algorithm Design and Implementation) </h3>
 <ul>
    <li>
-<h4>메뉴 함수 알고리즘</h4>
+<h4>메뉴 함수 알고리즘 (menu)</h4>
  </li>
 <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/menu_Function.png" width="20%" height="20%">
   <li>
-<h4>데이터 입력 함수 알고리즘</h4>
+<h4>데이터 입력 함수 알고리즘 (input)</h4>
  </li>
 <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/input_Function.png" width="20%" height="20%">
  <li>
-<h4>정렬 함수 알고리즘: 버블정렬</h4>
+<h4>정렬 함수 알고리즘: 버블정렬(bubbleSorting)</h4>
  </li>
 <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/bubbleSorting_Function.png" width="100%" height="70%">
  <li>
-<h4>출력 함수 알고리즘</h4>
+<h4>출력 함수 알고리즘 (printingList)</h4>
  </li>
 <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/printingList_Function.png" width="100%" height="70%">
  <li>
- <h4>파일 쓰기 및 저장 함수 알고리즘</h4>
+ <h4>파일 쓰기 및 저장 함수 알고리즘 (fileWriting)</h4>
  </li>
 <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/fileWriting_Function.png" width="100%" height="70%">
  <li>
-<h4>파일 읽기 함수 알고리즘</h4>
+<h4>파일 읽기 함수 알고리즘 (fileReading)</h4>
  </li>
 <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200518/image/fileReading_Function.png" width="100%" height="70%">
  </ul>
