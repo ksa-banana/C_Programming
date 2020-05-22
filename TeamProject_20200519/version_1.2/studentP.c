@@ -46,7 +46,6 @@ void menu(struct studentList* student_list, int list_size)
 			//검색 함수
 			searchingLeader(student_list, list_size, t);
 
-
 			break;
 
 		case 2:
@@ -60,7 +59,6 @@ void menu(struct studentList* student_list, int list_size)
 			//검색 함수
 			searchingCompany(student_list, list_size, input, t);
 
-
 			break;
 
 		case 3:
@@ -73,8 +71,6 @@ void menu(struct studentList* student_list, int list_size)
 
 			//검색 함수
 			searchingName(student_list, list_size, input, t);
-
-
 
 			break;
 
@@ -102,7 +98,6 @@ void menu(struct studentList* student_list, int list_size)
 			//검색 함수
 			searchingSchool(student_list, list_size, input, t);
 
-
 			break;
 
 		case 6:
@@ -115,8 +110,6 @@ void menu(struct studentList* student_list, int list_size)
 
 			//검색 함수
 			searchingMajor(student_list, list_size, input, t);
-
-
 
 			break;
 
@@ -170,20 +163,10 @@ struct studentList fileLineReading(FILE* fp) {
 	//변수 선언
 	// 원본 데이터 포인터
 	char* str;
-
-	// 버퍼 사이즈
 	int buf_size = MAX * MAX;
-
-	// 포인터
 	char* ptr;
-
 	int line_count = 0;
-
-
 	int i = 0;
-
-	//파일 열기
-	//fp = fopen(dir, "r");
 
 
 	// 크기 동적 할당
@@ -194,12 +177,13 @@ struct studentList fileLineReading(FILE* fp) {
 	struct studentList line;
 
 
+	//파일 한줄을 읽고, 토큰 함수로 잘라
+	//구조체에 저장
 	ptr = fgets(str, buf_size, fp);
-	//getchar();
 	line = retToken(ptr);
 
 
-
+	//메모리 반환
 	free(str);
 
 	return line;
@@ -210,37 +194,29 @@ struct studentList fileLineReading(FILE* fp) {
 struct studentList retToken(char* ptr) {
 
 	int i = 0;
-
 	// strtok()을 이용하여 문자열을 ';' 토큰을 기준으로 자름
 	// char* ptr = strtok(inp, ";");
 	char* ptoken = strtok(ptr, "??,\n");
 	char* line[COL] = { NULL };
-	struct studentList list_line;
 
 
 
+	//토큰으로 잘려진 데이터를
+	//구조체에 저장
 	while (ptoken != NULL) {
-
-		//arry[i] = ptr;
 
 		if (i == 0 && (strcmp(ptoken, "조장") != 0) && strcmp(ptoken, "조장 여부") != 0) {
 			line[0] = "조원";
 			line[i + 1] = ptoken;
-			/*
-			strcpy(line[0], "조원");
-			strcpy(line[i + 1], token);
-			*/
 		}
 		else if (i == 0 && strcmp(ptoken, "조장") == 0 || strcmp(ptoken, "조장 여부") == 0) {
 			line[i] = ptoken;
 		}
 		else if (strcmp(line[0], "조원") == 0) {
 			line[i + 1] = ptoken;
-			//strcpy(line[i + 1], token);
 		}
 		else {
 			line[i] = ptoken;
-			//strcpy(*line[i], token);
 		}
 
 		ptoken = strtok(NULL, "??,\"\n");
@@ -250,9 +226,8 @@ struct studentList retToken(char* ptr) {
 	}
 
 
-	list_line = inputData(line);
 
-	return list_line;
+	return inputData(line);
 }
 
 
@@ -279,12 +254,14 @@ struct studentList inputData(char** line) {
 
 
 
-
+//조장 검색 함수
 void searchingLeader(struct studentList* student_list, int list_size, time_t t) {
 
+	//변수 선언
 	int count = 0;
 	int i, j = 0;
 
+	//검색한 데이터 count
 	for (int i = 0; i < list_size; i++) {
 
 		if (strcmp(student_list[i].leader, "조장") == 0) {
@@ -293,10 +270,12 @@ void searchingLeader(struct studentList* student_list, int list_size, time_t t) 
 	}
 
 
-	//검색 결과를 저장할
+	//검색 결과 크기에 맞는
 	//메모리 동적 할당
 	struct studentList* result_list = (struct studentList*) malloc(sizeof(struct studentList) * count);
 
+	//검색 결과
+	//구조체에 저장
 	for (i = 0; i < list_size; i++) {
 
 		if (strcmp(student_list[i].leader, "조장") == 0) {
@@ -325,11 +304,17 @@ void searchingLeader(struct studentList* student_list, int list_size, time_t t) 
 	free(result_list);
 }
 
+
+
+//기업 검색
 void searchingCompany(struct studentList* student_list, int list_size, char *input, time_t t) {
 
+	//변수 선언
 	int count = 0;
 	int i, j = 0;
 
+
+	//검색 결과 count
 	for (int i = 0; i < list_size; i++) {
 
 		if (strcmp(student_list[i].company, input) == 0) {
@@ -338,9 +323,12 @@ void searchingCompany(struct studentList* student_list, int list_size, char *inp
 	}
 
 
+	//검색 결과 크기에 맞는
+	//메모리 동적 할당
 	struct studentList* result_list = (struct studentList*) malloc(sizeof(struct studentList) * count);
 
-
+	//검색 결과
+	//구조체에 저장
 	for (i = 0; i < list_size; i++) {
 
 		if (strcmp(student_list[i].company, input) == 0) {
@@ -367,11 +355,17 @@ void searchingCompany(struct studentList* student_list, int list_size, char *inp
 	free(result_list);
 }
 
+
+
+//이름 검색
 void searchingName(struct studentList* student_list, int list_size, char *input, time_t t) {
 
+	//변수 선언
 	int count = 0;
 	int i, j = 0;
 
+
+	//검색 결과 count
 	for (int i = 0; i < list_size; i++) {
 
 		if (strcmp(student_list[i].name, input) == 0) {
@@ -380,8 +374,12 @@ void searchingName(struct studentList* student_list, int list_size, char *input,
 	}
 
 
+	//검색 결과 크기에 맞는
+	//메모리 동적 할당
 	struct studentList* result_list = (struct studentList*) malloc(sizeof(struct studentList) * count);
 
+	//검색 결과
+	//구조체에 저장
 	for (i = 0; i < list_size; i++) {
 
 		if (strcmp(student_list[i].name, input) == 0) {
@@ -408,11 +406,16 @@ void searchingName(struct studentList* student_list, int list_size, char *input,
 	free(result_list);
 }
 
+
+//이메일 검색 함수
 void searchingEmail(struct studentList* student_list, int list_size, char *input, time_t t) {
 
+	//변수 선언
 	int count = 0;
 	int i, j = 0;
 
+
+	//검색 결과 count
 	for (int i = 0; i < list_size; i++) {
 
 		if (strcmp(student_list[i].email, input) == 0) {
@@ -421,8 +424,12 @@ void searchingEmail(struct studentList* student_list, int list_size, char *input
 	}
 
 
+	//검색 결과 크기에 맞는
+	//메모리 동적 할당
 	struct studentList* result_list = (struct studentList*) malloc(sizeof(struct studentList) * count);
 
+	//검색 결과
+	//구조체에 저장
 	for (i = 0; i < list_size; i++) {
 
 		if (strcmp(student_list[i].email, input) == 0) {
@@ -448,11 +455,15 @@ void searchingEmail(struct studentList* student_list, int list_size, char *input
 	free(result_list);
 }
 
+
+//학교 검색 함수
 void searchingSchool(struct studentList* student_list, int list_size, char *input, time_t t) {
 
+	//변수 선언
 	int count = 0;
 	int i, j = 0;
 
+	//검색 결과 count
 	for (int i = 0; i < list_size; i++) {
 
 		if (strcmp(student_list[i].school, input) == 0) {
@@ -461,8 +472,12 @@ void searchingSchool(struct studentList* student_list, int list_size, char *inpu
 	}
 
 
+	//검색 결과 크기에 맞는
+	//메모리 동적 할당
 	struct studentList* result_list = (struct studentList*) malloc(sizeof(struct studentList) * count);
 
+	//검색 결과
+	//구조체에 저장
 	for (i = 0; i < list_size; i++) {
 
 		if (strcmp(student_list[i].school, input) == 0) {
@@ -498,6 +513,7 @@ void searchingMajor(struct studentList* student_list, int list_size, char *input
 	int i, j = 0;
 
 
+	//검색 결과 count
 	for (int i = 0; i < list_size; i++) {
 
 		if (strcmp(student_list[i].major, input) == 0) {
@@ -510,6 +526,8 @@ void searchingMajor(struct studentList* student_list, int list_size, char *input
 	//메모리 동적 할당
 	struct studentList* result_list = (struct studentList*) malloc(sizeof(struct studentList) * count);
 
+	//검색 결과
+	//구조체에 저장
 	for (i = 0; i < list_size; i++) {
 
 		if (strcmp(student_list[i].major, input) == 0) {
@@ -551,7 +569,7 @@ void searchResultPrintf(struct studentList *result_list, int count)
 	printf("\n검색 결과 입니다.\n");
 	for (i; i < count; i++)
 	{
-		printf("%s", result_list[i].leader, result_list[i].company, result_list[i].name, result_list[i].email, result_list[i].school, result_list[i].major);
+		printf("%s", result_list[i].leader);
 		printf("%s", result_list[i].company);
 		printf("%s", result_list[i].name);
 		printf("%s", result_list[i].email);
