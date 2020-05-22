@@ -32,6 +32,6 @@
     <h5><a href ="https://github.com/ksa-banana/C_Language/tree/master/TeamProject_20200518/version_01">데이터 구조체 생성, 데이터 입력, 정렬 출력 구현</a></h5>
   </li>
     <li>
-    <h5><a href ="https://github.com/ksa-banana/C_Language/tree/master/TeamProject_20200519/version_01">Excel(CSV) 파일 읽기, 데이터 구조체 생성, 데이터 검색, 파일 출력 </a></h5>
+    <h5><a href ="https://github.com/ksa-banana/C_Language/tree/master/TeamProject_20200519/version_1.2">Excel(CSV) 파일 읽기, 데이터 구조체 생성, 데이터 검색, 파일 출력 </a></h5>
   </li>
   </ul>
