@@ -12,7 +12,7 @@ struct studentList
 };
 
 
-// 
+// 함수 선언
 //input
 int getFileSize(char* fir);
 struct studentList fileLineReading(FILE* fp);
