@@ -5,10 +5,21 @@
 <h4>- 데이터 파일 읽고 구조체에 저장, 데이터 검색, 검색 결과 파일 출력</h4>
 <br>
 <h3> 2. 구조 설계 (Structure Design)</h3>
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/systemStructure.png" width="30%" height="30%">
 <h4> 1) 첫 번째 콘솔 입력창: 메뉴 생성 (조장 검색/기업 검색/이름 검색/이메일 검색/학교 검색/전공 검색)</h4>
 
 <h4> 2) 구조체 선언 및 생성 </h4>
 <h5>- studentList: leader(조장 여부), company(회사), name(이름), email(이메일), school(학교), major(전공)</h5><br>
+<table>
+<tr>
+ <td>조장 여부</td>
+ <td>회사</td>
+ <td>이름</td>
+ <td>이메일</td>
+ <td>학교</td>
+ <td>전공</td>
+</tr>
+</table>
 
 <h4> 3) 기능(함수) </h4>
 <h5>- menu: 메뉴 → 사용자의 선택 </h5>
@@ -177,7 +188,7 @@
  <li>
 <h4>검색 기록 파일 쓰기 함수 알고리즘 (logFileWrithing)</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/01.png" width="30%" height="30%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/fileWriting_Function.png" width="30%" height="30%">
  </ul>
 <br>
 
