@@ -1,5 +1,5 @@
 
-//±¸Á¶Ã¼
+//êµ¬ì¡°ì²´ ì„ ì–¸
 struct studentList
 {
 	char leader[20];
@@ -12,7 +12,7 @@ struct studentList
 };
 
 
-
+// 
 //input
 int getFileSize(char* fir);
 struct studentList fileLineReading(FILE* fp);
