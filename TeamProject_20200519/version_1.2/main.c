@@ -11,28 +11,27 @@
 
 int main(void)
 {
-	//º¯¼ö ¼±¾ğ
+	//ë³€ìˆ˜ ì„ ì–¸
 	int i = 0;
-	int list_size = 0;
 	int line_count = 0;
 	FILE* fp;
-	char *dir = "C:\\result\\¼­¿ï¹İ ±³À°»ı ¸í´Ü_ÇÑ±¹Ç¥ÁØÇùÈ¸.csv";
+	char *dir = "C:\\result\\ì„œìš¸ë°˜ êµìœ¡ìƒ ëª…ë‹¨_í•œêµ­í‘œì¤€í˜‘íšŒ.csv";
 
 
-	//ÆÄÀÏ ½ºÆ®¸² ¿­±â
+	//íŒŒì¼ ìŠ¤íŠ¸ë¦¼ ì—´ê¸°
 	fp = fopen(dir, "r");
 
 
-	//µ¿Àû ÇÒ´çÇÒ ÆÄÀÏ Å©±â
+	//ë™ì  í• ë‹¹í•  íŒŒì¼ í¬ê¸°
 	line_count = getFileSize(dir);
 
-	//ÆÄÀÏ Å©±â¿¡ ¸Â´Â
-	//¸Ş¸ğ¸® µ¿Àû ÇÒ´ç
+	//íŒŒì¼ í¬ê¸°ì— ë§ëŠ”
+	//ë©”ëª¨ë¦¬ ë™ì  í• ë‹¹
 	struct studentList* student_list = (struct studentList*)malloc(sizeof(struct studentList) * line_count);
 
 
 
-	// ÆÄÀÏ ÀĞ¾î¿Í ±¸Á¶Ã¼¿¡ ÀúÀå
+	// íŒŒì¼ ì½ì–´ì™€ êµ¬ì¡°ì²´ì— ì €ì¥
 	for (i = 0; i < line_count; i++)
 	{
 		student_list[i] = fileLineReading(fp);
@@ -40,22 +39,12 @@ int main(void)
 
 
 
-	//ÀüÃ¼ ¸®½ºÆ® count
-	i = 0;
-	
-	while (strcmp(student_list[i].leader, "") != 0) {
-		list_size++;
-		i++;
-	}
-
-
-	//¸Ş´º Ãâ·Â
-	menu(student_list, list_size);
+	//ë©”ë‰´ ì¶œë ¥
+	menu(student_list, line_count);
 
 	
 
-
-	//¸Ş¸ğ¸® ¹İÈ¯°ú ÆÄÀÏ ½ºÆ®¸² ´İ±â
+	//ë©”ëª¨ë¦¬ ë°˜í™˜ê³¼ íŒŒì¼ ìŠ¤íŠ¸ë¦¼ ë‹«ê¸°
 	free(student_list);
 	fclose(fp);
 
