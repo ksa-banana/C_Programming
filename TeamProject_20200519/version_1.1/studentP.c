@@ -125,7 +125,7 @@ void menu(struct studentList* student_list, int list_size)
 
 		if (ans == 'y')
 			k = 0;;
-	
+
 	}
 }
 
@@ -135,7 +135,7 @@ int getFileSize(char* dir)
 {
 	//변수 선언
 	FILE* fp = fopen(dir, "r");
-	char* str = 0 ;
+	char* str = 0;
 	int buf_size = MAX * MAX;
 	int line_count = 0;
 
@@ -171,7 +171,7 @@ struct studentList fileLineReading(FILE* fp) {
 
 	// 크기 동적 할당
 	str = (char*)malloc(buf_size);
-	
+
 
 	//반환할 데이터 목록
 	struct studentList line;
@@ -307,7 +307,7 @@ void searchingLeader(struct studentList* student_list, int list_size, time_t t) 
 
 
 //기업 검색
-void searchingCompany(struct studentList* student_list, int list_size, char *input, time_t t) {
+void searchingCompany(struct studentList* student_list, int list_size, char* input, time_t t) {
 
 	//변수 선언
 	int count = 0;
@@ -339,12 +339,12 @@ void searchingCompany(struct studentList* student_list, int list_size, char *inp
 			strcpy(result_list[j].email, student_list[i].email);
 			strcpy(result_list[j].school, student_list[i].school);
 			strcpy(result_list[j].major, student_list[i].major);
-			
+
 			j++;
 		}
 	}
 
-	
+
 	//검색 결과 출력
 	searchResultPrintf(result_list, count);
 
@@ -358,7 +358,7 @@ void searchingCompany(struct studentList* student_list, int list_size, char *inp
 
 
 //이름 검색
-void searchingName(struct studentList* student_list, int list_size, char *input, time_t t) {
+void searchingName(struct studentList* student_list, int list_size, char* input, time_t t) {
 
 	//변수 선언
 	int count = 0;
@@ -408,7 +408,7 @@ void searchingName(struct studentList* student_list, int list_size, char *input,
 
 
 //이메일 검색 함수
-void searchingEmail(struct studentList* student_list, int list_size, char *input, time_t t) {
+void searchingEmail(struct studentList* student_list, int list_size, char* input, time_t t) {
 
 	//변수 선언
 	int count = 0;
@@ -457,7 +457,7 @@ void searchingEmail(struct studentList* student_list, int list_size, char *input
 
 
 //학교 검색 함수
-void searchingSchool(struct studentList* student_list, int list_size, char *input, time_t t) {
+void searchingSchool(struct studentList* student_list, int list_size, char* input, time_t t) {
 
 	//변수 선언
 	int count = 0;
@@ -506,7 +506,7 @@ void searchingSchool(struct studentList* student_list, int list_size, char *inpu
 
 
 //전공 검색 함수
-void searchingMajor(struct studentList* student_list, int list_size, char *input, time_t t) 
+void searchingMajor(struct studentList* student_list, int list_size, char* input, time_t t)
 {
 	//변수 선언
 	int count = 0;
@@ -559,21 +559,21 @@ void searchingMajor(struct studentList* student_list, int list_size, char *input
 
 
 //검색 결과 출력 함수
-void searchResultPrintf(struct studentList *result_list, int count)
+void searchResultPrintf(struct studentList* result_list, int count)
 {
 	//변수 선언
 	int i = 0;
 
 
 	//검색 결과를 출력하는 반복문
-	printf("\n검색 결과 입니다.\n");
+	printf("\n검색 결과 입니다.\n\n");
 	for (i; i < count; i++)
 	{
-		printf("%s", result_list[i].leader);
-		printf("%s", result_list[i].company);
-		printf("%s", result_list[i].name);
-		printf("%s", result_list[i].email);
-		printf("%s", result_list[i].school);
+		printf("%s ", result_list[i].leader);
+		printf("%s ", result_list[i].company);
+		printf("%s ", result_list[i].name);
+		printf("%s ", result_list[i].email);
+		printf("%s ", result_list[i].school);
 		printf("%s\n", result_list[i].major);
 	}
 }
@@ -581,11 +581,11 @@ void searchResultPrintf(struct studentList *result_list, int count)
 
 
 //파일 출력 함수
-void fileWriting(struct studentList *list, time_t time, int count)
+void fileWriting(struct studentList* list, time_t time, int count)
 {
 	//변수 선언
 	FILE* ofp;
-	int i= 0;
+	int i = 0;
 
 	//출력할 파일
 	ofp = fopen("C:\\result\\result.txt", "a");
@@ -600,12 +600,12 @@ void fileWriting(struct studentList *list, time_t time, int count)
 	//파일로 출력
 	for (i = 0; i < count; i++)
 	{
-		fprintf(ofp, "%s", list[i].leader);
-		fprintf(ofp, "%s", list[i].company);
-		fprintf(ofp, "%s", list[i].name);
-		fprintf(ofp, "%s", list[i].email);
-		fprintf(ofp, "%s", list[i].school);
-		fprintf(ofp, "%s", list[i].major);
+		fprintf(ofp, "%s ", list[i].leader);
+		fprintf(ofp, "%s ", list[i].company);
+		fprintf(ofp, "%s ", list[i].name);
+		fprintf(ofp, "%s ", list[i].email);
+		fprintf(ofp, "%s ", list[i].school);
+		fprintf(ofp, "%s ", list[i].major);
 		fprintf(ofp, "%s\n", ctime(&time));
 	};
 
