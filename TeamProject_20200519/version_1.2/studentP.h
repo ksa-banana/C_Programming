@@ -18,8 +18,8 @@ int getFileSize(char* fir);
 struct studentList fileLineReading(FILE* fp);
 struct studentList retToken(char* ptr);
 struct studentList inputData(char** line);
+void menu(struct studentList* student_list, int list_size);
 //search
-int menu();
 void searchingLeader(struct studentList* student_list, int list_size, time_t t);
 void searchingCompany(struct studentList* student_list, int list_size, char *input, time_t t);
 void searchingName(struct studentList* student_list, int list_size, char *input, time_t t);
