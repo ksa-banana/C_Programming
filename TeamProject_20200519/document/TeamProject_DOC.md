@@ -5,23 +5,24 @@
 <h4>- 데이터 파일 읽고 구조체에 저장, 데이터 검색, 검색 결과 파일 출력</h4>
 <br>
 <h3> 2. 구조 설계 (Structure Design)</h3>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/systemStructure.png" width="30%" height="30%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/systemStructure.png" width="20%" height="20%">
 <h4> 1) 첫 번째 콘솔 입력창: 메뉴 생성 (조장 검색/기업 검색/이름 검색/이메일 검색/학교 검색/전공 검색)</h4>
 
 <h4> 2) 구조체 선언 및 생성 </h4>
-<h5>- studentList: leader(조장 여부), company(회사), name(이름), email(이메일), school(학교), major(전공)</h5><br>
+//<h5>- studentList: leader(조장 여부), company(회사), name(이름), email(이메일), school(학교), major(전공)</h5><br>
 <table>
 <tr>
- <td>조장 여부</td>
- <td>회사</td>
- <td>이름</td>
- <td>이메일</td>
- <td>학교</td>
- <td>전공</td>
+ <th>조장 여부</th>
+ <th>회사</th>
+ <th>이름</th>
+ <th>이메일</th>
+ <th>학교</th>
+ <th>전공</th>
 </tr>
 </table>
 
 <h4> 3) 기능(함수) </h4>
+<h5>- getFileSize: 파일 라인 크기 반환 </h5>
 <h5>- menu: 메뉴 → 사용자의 선택 </h5>
 <h5>- fileReading: 파일 읽기 </h5>
 <h5>- retToken: 토큰으로 데이터 자르기 </h5>
@@ -31,8 +32,9 @@
 <h5>- searchingName: 이름 컬럼 검색 </h5>
 <h5>- searchingEmail: 이메일 컬럼 검색 </h5>
 <h5>- searchingSchool: 학교 컬럼 검색 </h5>
-<h5>- serachingMajor: 전공 컬럼 검색 </h5>
-<h5>- logFileWrithing: 파일 출력 </h5><br>
+<h5>- searchingMajor: 전공 컬럼 검색 </h5>
+<h5>- searchingResultPrintf: 검색 결과 출력 </h5>
+<h5>- fileWrithing: 파일 출력 </h5><br>
 
 <h4> 4) studnetP.h : 구조체 선언, 함수 선언  </h4>
 <h4> 5) studentP.c : 함수 정의, include studnetP.h </h4>
@@ -146,6 +148,10 @@
 <h3> 4. 알고리즘 설계 및 구현 (Algorithm Design and Implementation) </h3>
 <ul>
 <li>
+<h4>메인 함수 알고리즘 (main)</h4>
+ </li>
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/main_Function.png" width="20%" height="20%">
+  <li>
 <h4>메뉴 함수 알고리즘 (menu)</h4>
  </li>
 <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/menu_Function.png" width="20%" height="20%">
@@ -188,7 +194,7 @@
  <li>
 <h4>검색 기록 파일 쓰기 함수 알고리즘 (logFileWrithing)</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/fileWriting_Function.png" width="30%" height="30%">
+<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/fileWriting_Function.png" width="20%" height="20%">
  </ul>
 <br>
 
