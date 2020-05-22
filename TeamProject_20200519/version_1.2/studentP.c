@@ -7,23 +7,133 @@
 
 #define MAX 1024
 #define COL 6
+#define MAX_DATA_LEN 60
 
 
-
-int menu()
+void menu(struct studentList* student_list, int list_size)
 {
-	int num = 0;
-	printf("원하시는 메뉴를 선택해주세요\n");
-	printf("1. 조장 검색\n");
-	printf("2. 회사명 검색\n");
-	printf("3. 이름 검색\n");
-	printf("4. Email 검색\n");
-	printf("5. 학교 검색\n");
-	printf("6. 전공 검색\n");
-	scanf("%d", &num);
-	getchar();
+	//변수 선언
+	int select_num = 0;
+	char input[MAX_DATA_LEN];
+	time_t t[MAX];
+	char ans = 0;
+	int k = 1;
+	int i = 0;
 
-	return num;
+
+	//메뉴 실행
+	while (k) {
+
+		//메뉴 선택
+		printf("원하시는 메뉴를 선택해주세요\n");
+		printf("1. 조장 검색\n");
+		printf("2. 회사명 검색\n");
+		printf("3. 이름 검색\n");
+		printf("4. Email 검색\n");
+		printf("5. 학교 검색\n");
+		printf("6. 전공 검색\n");
+		scanf("%d", &select_num);
+		getchar();
+
+
+
+		switch (select_num) {
+
+		case 1:
+			t[i] = time(NULL);
+
+
+			//검색 함수
+			searchingLeader(student_list, list_size, t);
+
+
+			break;
+
+		case 2:
+			//검색할 데이터 입력받기
+			printf("\n검색하고자 하는 회사명을 입력해주세요.\n");
+			scanf("%s", &input);
+			getchar();
+			t[i] = time(NULL);
+
+
+			//검색 함수
+			searchingCompany(student_list, list_size, input, t);
+
+
+			break;
+
+		case 3:
+			//검색할 데이터 입력받기
+			printf("\n검색하고자 하는 이름을 입력해주세요.\n");
+			scanf("%s", &input);
+			getchar();
+			t[i] = time(NULL);
+
+
+			//검색 함수
+			searchingName(student_list, list_size, input, t);
+
+
+
+			break;
+
+		case 4:
+			//검색할 데이터 입력받기
+			printf("\n검색하고자 하는 E-mail을 입력해주세요.\n");
+			scanf("%s", &input);
+			getchar();
+			t[i] = time(NULL);
+
+
+			//검색 함수
+			searchingEmail(student_list, list_size, input, t);
+
+			break;
+
+		case 5:
+			//검색할 데이터 입력받기
+			printf("\n검색하고자 하는 학교를 입력해주세요.\n");
+			scanf("%s", &input);
+			getchar();
+			t[i] = time(NULL);
+
+
+			//검색 함수
+			searchingSchool(student_list, list_size, input, t);
+
+
+			break;
+
+		case 6:
+			//검색할 데이터 입력
+			printf("\n검색하고자 하는 전공을 입력해주세요.\n");
+			scanf("%s", &input);
+			getchar();
+			t[i] = time(NULL);
+
+
+			//검색 함수
+			searchingMajor(student_list, list_size, input, t);
+
+
+
+			break;
+
+		default:
+			break;
+		}
+
+		i++;
+
+		//프로그램 종료
+		printf("\n프로그램을 종료하시겠습니까?(y/n) : ");
+		ans = getchar();
+
+		if (ans == 'y')
+			k = 0;;
+	
+	}
 }
 
 
@@ -182,10 +292,6 @@ void searchingLeader(struct studentList* student_list, int list_size, time_t t) 
 		}
 	}
 
-	if (count == 0)
-		printf("결과가 없습니다.\n");
-
-
 
 	//검색 결과를 저장할
 	//메모리 동적 할당
@@ -231,8 +337,6 @@ void searchingCompany(struct studentList* student_list, int list_size, char *inp
 		}
 	}
 
-	if (count == 0)
-		printf("결과가 없습니다.\n");
 
 	struct studentList* result_list = (struct studentList*) malloc(sizeof(struct studentList) * count);
 
@@ -275,8 +379,6 @@ void searchingName(struct studentList* student_list, int list_size, char *input,
 		}
 	}
 
-	if (count == 0)
-		printf("결과가 없습니다.\n");
 
 	struct studentList* result_list = (struct studentList*) malloc(sizeof(struct studentList) * count);
 
@@ -318,8 +420,6 @@ void searchingEmail(struct studentList* student_list, int list_size, char *input
 		}
 	}
 
-	if (count == 0)
-		printf("결과가 없습니다.\n");
 
 	struct studentList* result_list = (struct studentList*) malloc(sizeof(struct studentList) * count);
 
@@ -360,8 +460,6 @@ void searchingSchool(struct studentList* student_list, int list_size, char *inpu
 		}
 	}
 
-	if (count == 0)
-		printf("결과가 없습니다.\n");
 
 	struct studentList* result_list = (struct studentList*) malloc(sizeof(struct studentList) * count);
 
@@ -399,15 +497,13 @@ void searchingMajor(struct studentList* student_list, int list_size, char *input
 	int count = 0;
 	int i, j = 0;
 
+
 	for (int i = 0; i < list_size; i++) {
 
 		if (strcmp(student_list[i].major, input) == 0) {
 			count++;
 		}
 	}
-
-	if (count == 0)
-		printf("결과가 없습니다.\n");
 
 
 	//검색 결과 크기에 맞는
@@ -452,9 +548,15 @@ void searchResultPrintf(struct studentList *result_list, int count)
 
 
 	//검색 결과를 출력하는 반복문
+	printf("\n검색 결과 입니다.\n");
 	for (i; i < count; i++)
 	{
-		printf("\n%s %s %s %s %s %s\n", result_list[i].leader, result_list[i].company, result_list[i].name, result_list[i].email, result_list[i].school, result_list[i].major);
+		printf("%s", result_list[i].leader, result_list[i].company, result_list[i].name, result_list[i].email, result_list[i].school, result_list[i].major);
+		printf("%s", result_list[i].company);
+		printf("%s", result_list[i].name);
+		printf("%s", result_list[i].email);
+		printf("%s", result_list[i].school);
+		printf("%s\n", result_list[i].major);
 	}
 }
 
@@ -467,9 +569,8 @@ void fileWriting(struct studentList *list, time_t time, int count)
 	FILE* ofp;
 	int i= 0;
 
-
 	//출력할 파일
-	ofp = fopen("C:\\result\\result.txt", "w");
+	ofp = fopen("C:\\result\\result.txt", "a");
 
 	if (ofp == NULL)
 	{
@@ -481,8 +582,13 @@ void fileWriting(struct studentList *list, time_t time, int count)
 	//파일로 출력
 	for (i = 0; i < count; i++)
 	{
-		fprintf(ofp, "%s %s %s %s %s %s %s\n", list[i].leader, list[i].company, list[i].name, list[i].email, list[i].school, list[i].major, ctime(&time));
-
+		fprintf(ofp, "%s", list[i].leader);
+		fprintf(ofp, "%s", list[i].company);
+		fprintf(ofp, "%s", list[i].name);
+		fprintf(ofp, "%s", list[i].email);
+		fprintf(ofp, "%s", list[i].school);
+		fprintf(ofp, "%s", list[i].major);
+		fprintf(ofp, "%s\n", ctime(&time));
 	};
 
 	//포인터 반환
