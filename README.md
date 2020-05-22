@@ -26,7 +26,7 @@
 <h4>[팀 프로젝트]</h4>
 <ul>
   <li>
-    <h5><a href ="https://github.com/ksa-banana/C_Language/tree/master/TeamProject_20200515/version_01">최대, 최소, 평균, 표준편차 함수 구현</a></h5>
+    <h5><a href ="https://github.com/ksa-banana/C_Language/tree/master/TeamProject_20200515/version_1.0">최대, 최소, 평균, 표준편차 함수 구현</a></h5>
   </li>
   <li>
     <h5><a href ="https://github.com/ksa-banana/C_Language/tree/master/TeamProject_20200518/version_01">데이터 구조체 생성, 데이터 입력, 정렬 출력 구현</a></h5>
