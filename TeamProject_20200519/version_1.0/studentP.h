@@ -1,5 +1,5 @@
 
-//����ü
+// 구조체 선언
 struct studentList
 {
 	char leader[20];
@@ -12,7 +12,7 @@ struct studentList
 };
 
 
-
+// 함수 선언
 //input
 struct studentList* fileReading(void);
 struct studentList retToken(char* arry[], char* ptr);
