@@ -2,35 +2,35 @@
 #include<math.h>
 #define _CRT_SEVURE_NO_WARNINGS
 
-// ÆÀ ÇÁ·ÎÁ§Æ®: 10°³ÀÇ ½Ç¼ö¸¦ ÀÔ·Â ¹Ş¾Æ¼­ ÃÖ´ë, ÃÖ¼Ò, Æò±Õ, Ç¥ÁØÆíÂ÷ ÇÔ¼ö¸¦ ±¸ÇöÇÑ´Ù.
+// íŒ€ í”„ë¡œì íŠ¸: 10ê°œì˜ ì‹¤ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ì„œ ìµœëŒ€, ìµœì†Œ, í‰ê· , í‘œì¤€í¸ì°¨ í•¨ìˆ˜ë¥¼ êµ¬í˜„í•œë‹¤.
 
-// ÇÔ¼ö ¼±¾ğ
+// í•¨ìˆ˜ ì„ ì–¸
 
-// ÀÔ·ÂµÈ ½Ç¼öÀÇ ÃÖ´ë°ª
+// ì…ë ¥ëœ ì‹¤ìˆ˜ì˜ ìµœëŒ€ê°’
 double max(double arr[]);
 
 
-// ÀÔ·ÂµÈ ½Ç¼öÀÇ ÃÖ¼Ò°ª
+// ì…ë ¥ëœ ì‹¤ìˆ˜ì˜ ìµœì†Œê°’
 double min(double arr[]);
 
 
-// ÀÔ·ÂµÈ ½Ç¼öÀÇ Æò±Õ°ª
+// ì…ë ¥ëœ ì‹¤ìˆ˜ì˜ í‰ê· ê°’
 double avg(double arr[], int);
 
 
-// ÀÔ·ÂµÈ ½Ç¼öÀÇ Ç¥ÁØÆíÂ÷
+// ì…ë ¥ëœ ì‹¤ìˆ˜ì˜ í‘œì¤€í¸ì°¨
 double std(double arr[], int);
 
 int main(void)
 {
-	// ÃÊ±âÈ­
+	// ì´ˆê¸°í™”
 	double max_num, min_num, avg_num, std_num = 0;
 	double arr[10] = { 0 };
 	int i = 0;
 
 	for (i = 0; i < sizeof(arr) / sizeof(arr[0]); i++)
 	{
-		printf("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+		printf("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 		scanf_s("%lf", &arr[i]);
 	}
 
@@ -52,10 +52,10 @@ int main(void)
 }
 
 
-// ÃÖ´ë°© ±¸ÇÏ´Â ÇÔ¼ö
+// ìµœëŒ€ê°’ êµ¬í•˜ëŠ” í•¨ìˆ˜
 double max(double* pointer)
 {
-	// ÃÊ±âÈ­
+	// ì´ˆê¸°í™”
 	int i = 0;
 	double max_value = pointer[0];
 
@@ -71,10 +71,10 @@ double max(double* pointer)
 }
 
 
-// ÃÖ¼Ò°ªÀ» ±¸ÇÏ´Â ÇÔ¼ö
+// ìµœì†Œê°’ì„ êµ¬í•˜ëŠ” í•¨ìˆ˜
 double min(double* pointer)
 {
-	// ÃÊ±âÈ­
+	// ì´ˆê¸°í™”
 	double min_value = pointer[0];
 	int i = 0;
 
@@ -89,10 +89,10 @@ double min(double* pointer)
 }
 
 
-// Æò±Õ°ª
+// í‰ê· ê°’
 double avg(double* p, int count)
 {
-	// ÃÊ±âÈ­
+	// ì´ˆê¸°í™”
 	double avg_value = 0;
 	double sum = 0;
 	int i = 0;
@@ -108,22 +108,22 @@ double avg(double* p, int count)
 }
 
 
-// Ç¥ÁØÆíÂ÷
+// í‘œì¤€í¸ì°¨
 double std(double* pointer, int count)
 {
-	// Æò±Õ°ª
+	// í‰ê· ê°’
 	double avg_value = 0;
 
-	// Ç¥ÁØÆíÂ÷°ª
+	// í‘œì¤€í¸ì°¨ê°’
 	double std_value = 0;
 
-	// ÆíÂ÷
+	// í¸ì°¨
 	double dev[10];
 
-	// Á¦°öÇÑ ¼ö ÀúÀå
+	// ì œê³±í•œ ìˆ˜ ì €ì¥
 	double pNum[10];
 
-	// ºĞ»ê
+	// ë¶„ì‚°
 	double var = 0;
 
 	int i = 0;
@@ -140,7 +140,7 @@ double std(double* pointer, int count)
 
 	var = var / count;
 
-	// ºĞ»êÀÇ ·çÆ®°ª = Ç¥ÁØÆíÂ÷
+	// ë¶„ì‚°ì˜ ë£¨íŠ¸ê°’ = í‘œì¤€í¸ì°¨
 	std_value = sqrt(var);
 
 	return std_value;
