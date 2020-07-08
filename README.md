@@ -53,7 +53,7 @@
       <li><h5>임성환: </h5></li>
       <li><h5>정주비: </h5></li>
     </ul>
-    <li><h5>프로젝트 문서화</h5></li>
+    <li><h5><a href ="https://github.com/ksa-banana/C_Programming/blob/master/TeamProject_20200518/document/TeamProject_DOC.md">프로젝트 문서화</a></h5></li>
     </ul>
  </li>
     <li>
